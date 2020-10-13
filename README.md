@@ -165,7 +165,7 @@ Graduation requires that 80% of deliverables be completed (working) and delivere
 You will have read-only access to the GA class repo.  However, you most certainly will want to be able to make changes (e.g., add notes, save code exercises, etc).  These changes will be saved to your own personal copy of GA's Student repo - known as a **fork**. To get this fork do the following:
 
 1. Make sure that you're logged in to your GA **Enterprise** GitHub account. If you have not signed up yet, here's the link to do so: [https://git.generalassemb.ly/join?source=header](https://git.generalassemb.ly/join?source=header)
-2. In another tab, browse to the GA class repo:  [https://git.generalassemb.ly/SEI-CC/SEI-CC-9](https://git.generalassemb.ly/SEI-CC/SEI-CC-9)
+2. In another tab, browse to the GA class repo:  [https://git.generalassemb.ly/SEI-CC/SEI-R-10-19](https://git.generalassemb.ly/SEI-CC/SEI-R-10-19)
 3. In the top-right corner of the page, click the `Fork` button.
 SEI-CC
 Now you will have a copy of the repo in **your** Enterprise GitHub account!
