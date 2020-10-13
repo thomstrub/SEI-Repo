@@ -139,7 +139,7 @@ Graduation requires that 80% of deliverables be completed (working) and delivere
 
 [Link to the Deliverable Schedule in the `/resources` directory](./resources/deliverable-schedule.md)
 
-[Link to submit Deliverables](https://docs.google.com/forms/d/e/1FAIpQLScIkhrcY4hY4aqcuLh3JeFy8bg56TbYRUwiQV9r-_My9haFkQ/viewform)
+[Link to submit Deliverables](https://docs.google.com/forms/d/e/1FAIpQLSe-h4UjdHB419210jhGXZGXAU9T7CqTGd1evNaqGfiDp08J5g/viewform)
 
 ### Class Repo Structure
 
@@ -180,10 +180,10 @@ Now that you have a copy of the class repo in your GitHub account, it's time to 
 4. In Terminal, type `git clone ` and follow it by pasting in the copied URL from the clipboard. The command should now look something like this:
 
 ```
-$ git clone https://git.generalassemb.ly/YOUR-ENTERPRISE-GITHUB-USERNAME/SEI-CC/SEI-CC-9
+$ git clone https://git.generalassemb.ly/YOUR-ENTERPRISE-GITHUB-USERNAME/SEI-CC/SEI-R-10-19
 ```
 
-You can now `$ cd SEI-CC-9` and check out your local copy of of the GA class repo!
+You can now `$ cd SEI-R-10-19` and check out your local copy of of the GA class repo!
 
 #### Adding a git _remote_ for the original GA class repo
 
@@ -202,7 +202,7 @@ Note that by convention, the remote that points to the GitHub repo it was cloned
 However, in order to get the updates that the instructors push to the GA class repo, you will need to create another **remote** that points to GA's class repo that you forked:
 
 ```
-$ git remote add upstream https://git.generalassemb.ly/SEI-CC/SEI-CC-9.git
+$ git remote add upstream https://git.generalassemb.ly/SEI-CC/SEI-R-10-19.git
 ```
 
 Note that by convention, the remote that points to the *original* GitHub repo that was forked is named **upstream**.
