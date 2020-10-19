@@ -144,7 +144,7 @@ Graduation requires that 80% of deliverables be completed (working) and delivere
 ### Class Repo Structure
 
 ```
-/SEI-CC-9
+/SEI-R-10-19
     /computer-science
     /projects
     /resources
