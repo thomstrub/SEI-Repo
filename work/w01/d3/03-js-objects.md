@@ -1,353 +1,243 @@
 <img src="https://i.imgur.com/DEsPVNw.png" height="400">
 
+<img src="https://i.imgur.com/DEsPVNw.png" height="400">
+
 # Intro to JavaScript Objects
 
-## Learning Objectives
 
-| Students Will Be Able To: |
-|---|
-| Describe the Use Case for Objects |
-| Create Objects Using Object Literals |
-| Add a Property to an Existing Object |
-| Modify the Value of a Property |
-| Explain When to Use Dot or Square Bracket Notation |
-| Delete a Property |
-| Iterate Over an Object's Properties |
-| Use Property Shorthand Syntax |
-| Identify when a Property is a Method |
-| Describe How a Variable References an Object |
+### Objectives
+*After this lesson, students will be able to:*
 
-## Roadmap
+- Create and use Objects
+- Describe Objects supreme importance in JavaScript
+- Add and retrieve properties to an existing object using the dot and bracket notations
+- Understand Objects role in the JavaScript language. 
 
-1. The What and Why of Objects
-2. Ways to Create Objects
-3. Creating Objects with Object Literal Notation
-4. Properties - Review Questions
-5. Adding Properties to an Existing Object - Dot Notation
-6. Adding/Updating Properties - Practice
-7. Accessing Properties with Square Bracket Notation
-8. Square Bracket Notation - Practice
-9. Checking if an Object has a Property
-10. Deleting a Property
-11. Iterating Over an Object's Properties
-12. Property Shorthand Syntax
-13. Methods
-14. How Variables Reference an Object
-15. Essential Questions
-16. Further Study
+### Preparation
+*Before this lesson, students should already be able to:*
 
-## What Are Objects?
+- Create and manipulate variables with javascript
+- Use the chrome dev tools console
 
-- Objects are the most common data structure in _Object Oriented Programming_ (OOP).
+### What is an object?
 
-- Very simply, **objects** are a collection of zero or more **properties**.
+* Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages
+* Like arrays, objects can hold multiple pieces of data of varying types; but unlike arrays, objects use named keys rather than indices to order and access those pieces of data
+* The key - value store functions kind of like a dictionary that pairs words with definitions, and you can look up a definition by finding the word. For this reason, objects are actually called `dictionaries` in Python!
+* In JavaScript Objects typically have properties and methods. Properties are data attached to an object that describe it or are related to it in some way. Methods are just functions, but because they're attached to an object, you can think of them as actions that the object can invoke on itself
 
-- So what's a _property_? A _property_ consists of a **key: value** pair, where the:
-	- **key** is a _string_ or _symbol_ (other types will be coerced into strings), and the
-	- **value** is any JS expression (code that evaluates to a single value or thing), including other objects (yes, functions too).
+Example: A skateboard is an object that has properties and we can model a skateboard in JavaScript!
 
-- In computer science, collections of key/value pairs are commonly referred to as dictionaries - a good visualization of what an object is.
+A skateboard has properties like number of wheels, board graphic, and company. It also could have methods like "kickflip" or "treflip benihana".
 
-## Why Objects?
+### Syntax
 
-- In OOP, we often model the goal of our application using real-world objects.
+Objects use curly braces, just like code blocks. However instead of semicolons between lines, we use commas. 
 
-- As developers, you'll be working with objects more than anything else. The following is just a small example of what is modeled using objects:
-	- The browser window and the elements it visualizes are all represented in memory as JS objects.
-	- Every part of those elements, including their styling, is accessed via JS objects.
-	- Data submitted from the browser will be accessed on the server as objects.
-	- Data retrieved from a database will be stored in objects.
 
-- Now does it make sense why it's called **Object Oriented Programming**?
+```javascript
+const skateboard = {
+  wheels:    4, 
+  gripColor: "black", 
+  company:   "Toy Machine",
+  graphic:   "monster graphic",
+  kickflip(){
+               console.log("SIIIICK DOOD");
+          }
+};
+```
 
-## Ways to Create Objects
+### Key Value Pairs
+Each item in an object is a key-value pair like this: `company: "Toy Machine"`.
 
-- There are three different ways we can create objects:
-	- By using _Object Literal notation_
-	- By invoking a _Class_ (also known as a_Constructor Function_)
-	- By using the `Object.create` method
+A key can be either a name, a number or a string, the corresponding value to a key can be any value part of JavaScript, including arrays, `null` or `undefined`and even another object. Objects structures can therefore be nested (objects inside objects) and of any complexity.
 
-- Today, we're going to focus on using _Object Literals_ to create objects.
+### Let's Practice :computer: 
 
-- Next week, we'll learn how _Classes_ are used.
+ ```
+- Create an Object called `bigfoot` with propterties of `shoesize`, `height`, and `current location`. 
+- Add some more properties you come up with on your own. 
+- BONUS: Add a method (or function, same deal) to your bigfoot object!
+- 4 min.
+```
 
-- Using `Object.create` is not very common and won't be used during SEI, but as always, you're encouraged to research it.
+## Creating Objects
 
-### Creating Objects using Object Literal Notation
+There are other ways to create an object! What you just learned is called Object Literal Notation. 
 
-- Create a new Repl and name it something like "JS Objects".
+It's called that because you just literally typed the object in there. There are also:
 
-- Now let's create an object by using **Object Literal notation**, also known as an [Object Initializer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer):
-	
-	```js
-	const game = {};
-	console.log(typeof game); // "object"
-	```
+String Literals: `"hello world"`
+Array Literals: `["foo", "bar", "baz"]`
+and Integer Literals: `8`
 
-- As you can see, _Object Literal notation_ consists of a set of opening  and closing curly braces, `{}`.
+Don't get hung up on the fancy name. It just means you definied the object literally. It will make more sense when you see the others. 
 
-- We just used curly braces to create an empty `game` object.<br>**We consider it to be an empty object because it contains no _________?**
+Here's an empty Object Literal: 
 
-- Let's change the code so that `game` has a _property_:
+`const myShinyObject = {};`
 
-	```js
-	const game = {title: 'Guess the Number!'};
-	console.log(game);
-	```
+## Object methods
 
-- Stylistically, defining an object with a single property or a couple of "short" properties on a single line of code like this<br>`let point = {x: 10, y: -5};`<br>isn't a problem (unless it is with your boss).<br>**It's all about maintaining readability.**
+As we've said before, the value of a property can be anything in JavaScript, means we can also attach functions to objects properties. When a function is attached to a property, this function becomes a `method`. Methods are defined the exact same way as a function, except that they have to be defined as the property of an object.
 
-- Properties are separated by commas:
+```javascript
+const classroom = {
+  name: "WDI+ TX",
+  sayHello: function() {
+    console.log("Hello");
+  }
+};
+```
 
-	```js
-	const game = {
-	  title: 'Guess the Number!',
-	  biggestNum: 100
-	};
-	```
+To call the method, we add a pair of parentheses to execute it:
 
-- Syntactically, [a trailing comma](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas) is permitted after the last property:
+```
+classroom.sayHello();
+=> Hello
+```
 
-	```js
-	const game = {
-	  title: 'Guess the Number!',
-	  biggestNum: 100,  // trailing comma
-	};
-	```
+### Let's Practice :computer: 
 
-### ❓ Properties - Review Questions
+ ```
+- In your Chrome Console, create a new Object and give it four properties and a method using what we just learned. 
+- Retrieve each property and call the method. Remember you need `()` to envoke a funtion
+- See what happenes when you retrieve a method from a function without calling it using `()`. 
+- Thumbs up when done! 
+- 5 min.
+```
 
-- Considering:
+#### Bracket notation
 
-	```js
-	const game = {
-	  title: 'Guess the Number!',
-	  biggestNum: 100,
-	};
-	```
-	
-- Answer the following questions:
-	- **How many properties does `game` contain?**
-	- **What are the keys (AKA property names)?**
-	- **What are the property values of `game`?**
-	- **What are the data types of the keys?**
+There is another way to set properties on a JavaScript object. 
 
-### Adding Properties to an Existing Object Using Dot Notation
+```javascript
+galaxy["diameterInLightYears"] = 100000;
+galaxy["isEliptical"] = true;
+```
 
-- There are two different syntaxes available to access, add or modify an object's properties:
-	- **Dot notation**, and
-	- **Square Bracket notation**
+This syntax can also be used to read properties of an object:
 
-- We'll discuss why there are two syntaxes in a bit, for now, let's use _dot notation_ to add another property to the `game` object:
-	
-	```js
-	game.smallestNum = 0;
-	```
+```javascript
+galaxy["diameterInLightYears"];
+// 100000
 
-- Using the _assignment operator_, if a property doesn't exist, it is created, otherwise it's updated.
+galaxy["isEliptical"];
+// true
+```
 
-#### 💪 Adding/Updating Properties - Practice (2 min)
+For more details see [MDN's Documentation on Property Accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors).
 
-- Using dot notation on the `game` object:
-	- Add a property with a key of `numGuesses` set to a value of `0`.
-	- Update the `smallestNum` property's value to be `1`.
+### Let's Practice :computer: 
 
-### Accessing Properties with Square Bracket Notation
+ ```
+- In your Chrome Console, create a new Object and give it four properties and a method using bracket notation. 
+- Retrieve each property and call the method. Remember you need `()` to envoke a funtion
+- Thumbs up when done! 
+- 3 min.
+```
 
-- The other way to access, add, update and delete properties is by using **square bracket notation**.
+**Which one should we use?**
+Basically there are two differences. 
 
-- We use _square bracket notation_ instead of _dot notation_ when at the time you're writing the code, you don't know which property needs to be accessed.
+1) Dot notation is easier to read
+2) Bracket notation can only work with strings as keys. 
 
-- In other words, we use _square brackets_ to access properties _dynamically_ during runtime.
+For these two reasons, dot notation is generally a better choice. However, bracket notation occasionally has its uses.
 
-> Less common is to have to resort to using _square brackets_ to access properties when the key name contains a space.
+#### Deleting properties
 
-- _Square bracket notation_ has the following syntax:
+If you want to delete a property of an object (and by extension, the value attached to the property), you need to use the [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator:
 
-	```js
-	someObject[<any JS expression>]
-	```
-	
-- The `<any JS expression>` can be anything that evaluates to a single "value" - even function calls!
+The following code shows how to remove a property:
 
-- For example, assume we have an object `words` with "categories" of words:
+```javascript
+const myHerb = {name: "thyme", flavor: "savory"};
+delete myHerb.flavor;
+myHerb
+// {name: "thyme"};
+```
 
-	```js
-	const words = {
-	  animals: ['fox', 'zebra', 'bear', 'turkey'],
-	  colors: ['purple', 'orange', 'green'],
-	  // ...other categories
-	};
-	```
-- Now, the program can use a `selectedCategory` variable to access the array of words:
+#### Assigning a previously-defined function
 
-	```js
-	const wordList = words[selectedCategory];
-	```
-	
-- Again, we use square bracket notation to access properties dynamically during runtime.
+We can attach regular functions to objects as methods, even after they are created.
 
-#### 💪 Square Bracket Notation - Practice
+```javascript
+const sayHello = function(){ 
+  return console.log("Hello"); 
+}
 
-- Consider an object that represents a catalog of items where:
-	- Each property in the object represents an item for sale
-	- The _key_ of each property represents the item's SKU (Stock Keeping Unit - a retail store's unique ID for an item)
-	- The _value_ of the property represents the price of the item
+classroom.sayHello = sayHello;  
 
-- Take a couple of minutes to create another object named `catalog` that includes a few items - but don't delete `game` from the Repl. Again, each item is a _property_ with it's _key_ set to a unique alphanumeric string (a SKU) and its value to a number representing its price.
+classroom.sayHello()
+=> Hello
+```
 
-- Note: If you want to include special characters in the key, just be sure to use quotes.
+## Everything is an Object in JavaScript
 
-- Now let's code a price lookup:
+Mind. Blown. 
 
-	```js
-	let sku = '';
-	while (sku !== 'quit') {
-	  sku = prompt('Enter SKU or "quit" to exit: ');
-	  let price = catalog[sku];
-	  if (sku !== 'quit') alert(`The price of ${sku} is ${price}`);
-	}
-	```
+It's true. Ok, there are keywords and a thing called "primatives". 
 
-- That string in the `alert` is called a **template literal** and is delimited using back-tick characters (it's above the _tab_ key). One of its benefits is that we can use _string interpolation_ to embed the results of JS expressions right into the string using the `${<exp>}` syntax!
+Primatives are building blocks of programs like strings. But when you actually USE strings in JavaScript, they are automatically converted into String objects. Why? Because only OBJECTS can have properties and methods! 
 
-### Checking if an Object has a Property
+Arrays are objects, and functions are objects. Numbers, strings, and booleans are primitives, but when we use them they are usually converted to Objects. 
 
-- Notice that if we enter a non-existing SKU (key), we are alerted a price of `undefined`.
 
-- Unlike when we try to access an undeclared variable, we don't receive an error when we access a property that doesn't exist. Instead, `undefined` is returned - nice!
+```javascript
+const myArray = [];
+typeof myArray;
+//"object"
 
-- However, we can't rely on a value of `undefined` to check if a property exists because maybe a property legitimately has a value of `undefined`.
+const myString = "dope af";
+typeof(myString)
+//"string"
 
-- Instead, we can use the `in` operator...
+// But when you do this: 
+myString[0]
+//"d"
 
-- Let's tweak the code to use the `in` operator to check if the user has entered a valid key (SKU):
+// myString get's temporarily converted into an String Object.
+```
 
-	```js
-	let sku = '';
-	while (sku !== 'quit') {
-	  sku = prompt('Enter SKU or "quit" to exit: ');
-	  if (sku in catalog) {
-	    let price = catalog[sku];
-	    alert(`The price of ${sku} is ${price}`);
-	  } else if (sku !== 'quit') {
-	    alert('Invalid SKU - try again');
-	  }
-	}
-	```
+**Takeaway:** Javascript is complex, but there is order in the chaos. Part of that order is using key value pairs to structure almost everything in the language. 
 
-- Nice!
+**Mind blow II:**
 
-### Deleting a Property
+Not only are arrays a type of object, but they are nearly identical. Among the few differences are:
 
-- To completely remove a property from an object, we use the `delete` operator:
+1. Arrays are Objects that use ordered integers for their keys. 
 
-	```js
-	const geniuses = {
-	  Einstein: true,
-	  Newton: true,
-	  Snooki: false
-	};
-	
-	// see ya!
-	delete geniuses.Snooki;
-	```
+```javascript
+const myArray = ["hello", "world"];
+```
+is nearly identical to: 
 
-- **Try it out!** Use the `delete` operator to remove one of the items from your `catalog` object.
+```javascript
+ const myObject = {"0": "hello", "1": "world"};
+ 
+ myArray[0] === myObject["0"];
+ // true
+```
 
-### Iterating Over an Object's Properties
+2. Arrays are guarunteed to stay **in order**. For efficiency purposes, objects are not. 
 
-- Before continuing to work with the `game` object, comment out the price lookup code...
+## Conclusion (5 mins)
 
-- We often need to iterate over an object's properties.
+We will use objects in JavaScript every day, and you will have plenty of time to practice creating and using objects in Javascript. There are a lot of resources available on the web for you to dive deeper, but the most detailed and understandable one is probably MDN.
 
-- We can iterate over the _keys_ of the properties using a `for...in` loop:
+- [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+- [Intro to Object-Orientated Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+- [Objects in Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [All of JavaScript in one image](https://coodict.github.io/javascript-in-one-pic/js%20in%20one%20pic.png)
 
-	```js
-	for (let key in game) {
-	  console.log(`The value of the ${key} property is ${game[key]}`);
-	}
-	```
 
-- Note that `for...in` loops include all properties in the _prototype chain_ (inherited properties) - not just its own properties that live on the object itself.
+=====================
 
-- We'll learn how objects can inherit properties next week.
+### Further Study
 
-- There's a couple of nifty ES2017 methods that can be used to iterate over an object's **own**  keys and/or values:
-	- [Object.keys(obj)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
-	- [Object.values(obj)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values)
-	- [Object.entries(obj)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
 
-- Although cutting edge, these _static_ methods have already been implemented in all modern browsers.
 
-- Again, we'll learn what a _static method_ is next week.
-
-- Each of those methods mentioned returns an array that we can iterate over, for example:
-
-	```js
-	Object.values(game).forEach(function(val) {
-	  console.log(val);
-	});
-	```
-
-> Note: The ECMAScript specification does not dictate how properties should be ordered, however, all browsers currently iterate over them in the order they are defined/added.
-
-### Property Shorthand Syntax
-
-- It's a common scenario to want to pass the values of variables as properties (having the same name as the variable) in an object:
-
-	```js
-	const latitude = getLat('Disneyland');
-	const longitude = getLng('Disneyland');
-	
-	const location = {
-	  name: 'Disneyland',
-	  latitude: latitude,
-	  longitude: longitude
-	};
-	```
-
-- ES2015 strikes again...
-
-- Thanks to ES2015's **Property Shorthand** syntax, we can now do this
-
-	```js
-	const latitude = getLat('Disneyland');
-	const longitude = getLng('Disneyland');
-	
-	const location = {
-	  name: 'Disneyland',
-	  latitude,
-	  longitude
-	};
-	```
-
-- The variable name determines the name of the property.
-
-### Methods
-
-- When a property holds a function, we commonly refer to it as a **method** of the object.
-
-- Let's add a `play` _method_ to the `game` object:
-
-	```js
-	game.play = function() {
-	  this.secretNum = Math.floor(Math.random() * 
-	    (this.biggestNum - this.smallestNum + 1)) + this.smallestNum;
-	}
-	```
-
-- Try it out in the console by calling `game.play()` and then checking the value of `game.secretNum` a few times.
-
-- What's with the `this`?
-
-- The `this` keyword represents the "execution context" of a function.
-
-- In this case, `this` is set by JavaScript to be the object the method is called on.
-
-- We will have a dedicated lesson on `this` next week.
-
-- **IMPORTANT:** Due to how `this` is set within _arrow functions_, it's best to avoid using them as methods in objects.
 
 ### How Variables Reference an Object
 
@@ -406,8 +296,6 @@
 	const age = prompt('Enter your age: ');
 	const person = {name, age};
 	```
-
-### Further Study
 
 - [getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) and [setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set) properties allow you to treat methods like regular properties that you can access without invoking and set using the assignment operator (`=`).
 
