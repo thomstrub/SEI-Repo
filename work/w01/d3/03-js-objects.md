@@ -231,6 +231,22 @@ We will use objects in JavaScript every day, and you will have plenty of time to
 - [All of JavaScript in one image](https://coodict.github.io/javascript-in-one-pic/js%20in%20one%20pic.png)
 
 
+### ❓ Essential Questions
+
+- **An object is a collection of zero or more ___________.**
+
+- **Properties are _____ : ______ pairs.**
+
+- **Is it more efficient to access properties via dot or square bracket notation?**
+
+- **Is the following valid code?**
+
+	```js
+	const name = prompt('Enter your name: ');
+	const age = prompt('Enter your age: ');
+	const person = {name, age};
+	```
+
 =====================
 
 ### Further Study
@@ -278,23 +294,6 @@ We will use objects in JavaScript every day, and you will have plenty of time to
 	arr3 === arr1 // true!
 	```
 
-### ❓ Essential Questions
-
-- **An object is a collection of zero or more ___________.**
-
-- **Properties are _____ : ______ pairs.**
-
-- **Is it more efficient to access properties via dot or square bracket notation?**
-
-- **What type of `for` loop is used to iterate over the keys of an object?**
-
-- **Is the following valid code?**
-
-	```js
-	const name = prompt('Enter your name: ');
-	const age = prompt('Enter your age: ');
-	const person = {name, age};
-	```
 
 - [getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) and [setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set) properties allow you to treat methods like regular properties that you can access without invoking and set using the assignment operator (`=`).
 
