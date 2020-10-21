@@ -153,574 +153,418 @@ function sendReport(report) {
 
 #### Setup
 
-Let's setup the basic file structure today!
+For this lesson, we going to one of the many "code playgrounds", [repl.it](https://repl.it/).
 
----
-Title: Morning Lesson<br>
-Type: Lesson<br>
-Duration: 1.5 hrs<br>
-Creator: Thom Page <br>
-Topics: Functions (Arrow Functions)<br>
+[repl.it](https://repl.it/) provides an excellent way to learn and experiment with code. It allows you to name and save "repls" which makes it great for creating a library of techniques that you can easily reference in the future and share with others.
 
----
+Another cool thing about [repl.it](https://repl.it/) is that it offers a wide choice of programming languages and can even handle full-stack repls using frameworks like ExpressJS and Django which we'll be covering later in the course.
 
-# Lesson objectives
+Okay, go ahead and create a new HTML/CSS/JS repl and give it a name like "JS Functions".
 
-_After this lesson students will be able to:_
+Now we're ready to review some of what you might already know about functions and learn some cool new stuff too...
 
-* Write an arrow function with a parameter
-* Write an arrow function with multiple parameters and a return value
+#### Defining Functions
 
----
+There are three primary ways to define functions in JS:
 
-# FUNCTIONS
+1. Function Declaration/Definitions
+2. Function Expressions
+3. Arrow Functions
 
-### BLOCK
+##### 1) Function Declaration (AKA Function Definitions)
 
-Conditionals _skip_ lines of code within a block `{ ... } ` if a condition is not true:
-
-```javascript
-if (BOOLEAN EXPRESSION) {
-	// code might get skipped
+```js
+function sayHello(name) {
+  console.log('Hello ' + name + '!');
 }
 ```
 
-Loops _repeat_ lines of code within a block `{ ... }` according to our instructions:
+##### 2) Function Expression
 
-```javascript
-while (BOOLEAN EXPRESSION) {
-	// code is repeated
-}
-```
-
-We can also control the flow of our code with functions. Functions act like variables and **store** code within a block `{ ... } ` for use later, and for repeated uses.
-
-```javascript
-const func = () => {
-	// code to execute later
-}
-```
-
-### WHY FUNCTIONS?
-
-Using functions is another application of DRY. Don't Repeat Yourself. With a function, you can store code that can be used conveniently as many times as you wish, without having to rewrite the code each time.
-
-<br>
-<hr>
-
-11:05
-
-## DEFINING A FUNCTION
-
-&#x1F535; **Watch**
-
-Write a function that logs "Boo!" to the console.
-
-```javascript
-const printBoo = () => {
-	console.log('======');
-	console.log('Boo!');
-	console.log('======');
+```js
+var sayHello = function(name) {
+  console.log('Hello ' + name + '!');
 };
 ```
 
-The code will not run yet. The function needs to be **invoked**.
+**❓ What are the similarities and differences between the two approaches?**
 
-<br>
-<hr>
+##### The Key Difference Between Function Declarations & Expressions
 
-## INVOKING A FUNCTION
+For all practical purposes, the difference between them is that _function expressions_ cannot be invoked before they are defined; whereas _function declarations_ are **hoisted** to the top of their scope and can therefore be invoked even if they are defined later in the source code. For example:
 
-```javascript
-printBoo();
-printBoo();
-printBoo();
-```
+```js
+fnDeclaration();  // thank you function declarations :)
+fnExpression();  // TypeError: fnExpression is not a function
 
-Simply use the name of the variable and use **parentheses** to invoke the function.
+function fnDeclaration() {
+  console.log("I'm coming from a function declaration");
+}
 
-If the parentheses are not included, the function will not run.
-
-The invocation comes **after** the function definition. If you write it beforehand, it will be trying to invoke something that doesn't yet exist according to the interpreter.
-
-This will work:
-
-```javascript
-const printBoo = () => {
-	console.log('======');
-	console.log('Boo!');
-	console.log('======');
-};
-
-printBoo();
-```
-
-VS
-
-This will not:
-
-```javascript
-printBoo();
-
-const printBoo = () => {
-	console.log('======');
-	console.log('Boo!');
-	console.log('======');
+const fnExpression = function() {
+  console.log("I'm coming from a function expression");
 };
 ```
 
-<br>
-<hr>
+> Note: Attempting to execute a function expression before it's been assigned to its variable is the source of many an error for JS developers!
 
-&#x1F535; **Activity**
+##### 3) Arrow Functions
 
-* Write a function `printSum` that will console.log the result of 10 + 10
+ES2015 (ES6) delivered a third approach to defining functions - **Arrow Functions**.
 
-&#x1F535; **Extra**
+The following function declaration:
 
-* Write a function `printTriangle` that will print these pound signs to the console (there are 5 console.logs inside the function):
-
-```
-#
-##
-###
-####
-#####
-```
-
-&#x1F535; **Challenge**
-
-* Make it so that `printTriangle` will print the pound signs using a for loop (there is only 1 console.log inside the function).  
-
-<br>
-<hr>
-11:22
-
-## NAMING FUNCTIONS
-
-Always use **const** to declare your functions. It would be a strange day when a function would need to be reassigned. 
-
-The variable you use for a function should contain a **verb**. Functions **do** something, most often:
-
-* getting data
-* setting data
-* checking data
-* printing data
-
-If the purpose of your function is to check data, for example, use the verb `check` in the variable name.
-
-Example function that contains a conditional:
-
-```javascript
-const checkInputLength = (input) => {
-	if (input.length > 10) {
-		console.log('input length is greater than 10');
-	} else {
-		console.log('input length is not greater than 10');
-	}
-};
-```
-
-Functions should try to do **one thing** and **do it well**.
-
-If a function, called `checkInputLength`, does more than just check input, or doesn't do it very well, then it is a poor function.
-
-Takeaway: Think about appropriate **verbs** to use in your function variable names. The verns should indicate the **one thing** that the function does.
-
-<br>
-
-## ARGUMENTS AND PARAMETERS
-
-The preceding function, `checkInputLength` had a parameter called `input`.
-
-We can write functions that take in a type of variable called a **parameter**. By giving our functions some kind of variable input, we make them much more flexible.
-
-In the below example, the parameter is arbitrarily called `name` (we can call our parameters whatever we want - whatever makes semantic sense).
-
-&#x1F535; **Watch**
-
-Using **interpolation** I can put the input into a string:
-
-```javascript
-const sayName = (name) => {
-	console.log('Hello! My name is ' + name);
+```js
+// Function Declaration
+function add(a, b) {
+  return a + b;
 }
 ```
 
-When we _invoke_ the function, we can specify the value of the parameter, this is called an **argument**:
+and the following arrow function are equivalent:
 
-```javascript
-sayName("Frodo");
+```js
+// Arrow Function
+const add = (a, b) => a + b;
 ```
 
-We can continue to invoke the function with whatever **arguments** we want:
+Arrow Functions offer:
 
-```javascript
-sayName("Merry");
-sayName("Pippin");
-sayName("Sam");
+- A more concise syntax
+- Implicit return of a single expression
+- A single rule for binding the `this` keyword (more on this next week)
+
+However, as cool as Arrow Functions are, they cannot be used in every scenario due to the way they bind JavaScript's `this` (we'll learn more about `this` throughout the course).
+
+Rest assured we'll be using Arrow Functions during this course, however, for this lesson we'll focus on Function Declarations and Expressions which have served the language well for over 20 years...
+
+#### Calling Functions
+
+Regardless of which of the three approaches are used to define functions, we call them the same way:
+
+```js
+add(25, 100);  // returns 125
 ```
 
-Each time, the output of the function will change to reflect the argument.
+> **Developer Vocab:** Developers might say **call**, **execute**, **invoke** or **run** ...a function.  In the context of functions, they are synonyms.
 
-## Argument vs Parameter
+##### Let's Write a Function
 
-The **argument** is the input, the **parameter** is how the input is represented in the function.
+Let's write the following function together in the repl:
 
-```javascript
-const func = (PARAMETER) => {
-	// some code
-}
-
-func(ARGUMENT);
-```
-
-<br>
-
-&#x1F535; **Activity (10 min)**
-
-* Write a function `printParameter` that takes a parameter `input`. The function should simply console.log the value of the `input` parameter.
-* Invoke the function with an argument.
-
-&#x1F535; **Extra**
-
-* Write a function called `minusOne` that takes a parameter `num`. Assuming the argument is a number, print the argument -1.
-
-```javascript
-minusOne(10);        // 9
-minusOne(100);       // 99
-minusOne(Infinity);  // Infinity
-```
-
-&#x1F535; **Extra**
-
-* Write a function called `getLastElement` that takes a parameter `arr`.
-* Invoke the function with an **array** as the argument.
-* The function should print the **last element** within the array.
-
-```javascript
-getLastElement([1, 2, 3, 4, 5, 6]);       // 6
-getLastElement(['a', 'b', 'c']);          // 'c'
-getLastElement([[1, 2, 3], [4, 5, 6]]);   // [4, 5, 6]
-```
-
-_Hint:_ `arr[arr.length - 1]`
-
-<br>
-<hr>
-
-## Multiple Parameters
-
-We can use multiple parameters in our functions. A function can take any number of parameters.
-
-```javascript
-const multiply = (num1, num2) => {
-	console.log(num1 * num2);
+```js
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 ```
 
-When you invoke the function, you generally want to supply the right number of arguments.
+The `getRandomInt` function is defined to accept two arguments (inputs). These arguments should be numbers, otherwise the function as written won't work as expected.
 
-```javascript
-multiply(4, 4)
+The `return` keyword returns the result of the expression that follows it.
 
-=> 16
+> Note: In the real world, much of the code you write will be code designed prevent and handle error conditions. For example, in the `getRandomInt` function above, we would want to ensure that both of the inputs are numbers.  However, in SEI, we will minimize the amount of error handling code so that we can focus more on what it is we're trying to teach.  There just isn't enough time, so we must prioritize.
+
+Let's invoke the function a couple of times to try it out.
+
+**❓ Is the above function a function _declaration_ or _expression_?**
+
+Now it's your turn... 
+
+#### Practice Writing Functions
+
+You're going to write two functions, one as a function declaration & the other as a function expression.
+
+This will be an individual exercise, however, feel free to seek guidance from your neighbors and instructor if you get stuck.
+
+##### EXERCISE 1: Write a Function Declaration (5 min)
+
+Write a function named `computeArea` as a **function declaration**.
+
+It will have two parameters: `width` & `height`.
+
+It will compute the area of a rectangle (_width_ X _height_) and return a string in the following form:
+
+> **The area of a rectangle with a width of ___ and a height of ___ is ___ square units**
+
+Invoke the function to test it:
+
+```js
+console.log( computeArea(5, 25) )
+// output: The area of a rectangle with a width of 5 and a height of 25 is 125 square units
 ```
 
-&#x1F535; **Activity**
+##### EXERCISE 2: Write a Function Expression (10 min)
 
-* Write a function `makeSentence` that takes **three** parameters and **interpolates** them into a fully formed sentence.
+Write a function named `planetHasWater` as a **function expression**.
 
-```javascript
-makeSentence('I', 'want', 'chimichangas');
+It will have one parameter: `planet`.
+
+Return `true` if the `planet` argument is either "Earth" or "Mars", otherwise return `false`.
+
+Bonus points if you ensure the function will work regardless of the casing of the `planet` being passed in ('earth', 'MARS', etc.).
+
+Invoke the function a few times to test it:
+
+```js
+console.log( planetHasWater('Earth') ) //=> true
+console.log( planetHasWater('Venus') ) //=> false
+// Test the bonus...
+console.log( planetHasWater('mArS') ) //=> true
 ```
 
-> => 'Oh boy, do I want chimichangas or what?'
+##### FUNCTION REVIEW QUESTIONS
 
-&#x1F535; **Extra**
+**❓ How many different ways are there to define a function?**
 
-* Write a function `divideThreeNums` that takes **three** parameters and prints the third parameter divided by the result of the second parameter divided by the first.
+**❓ What's the only practical difference between a function definition and a function expression?**
 
-```javascript
-divideThreeNums(10, 5, 2)   // 4
-divideThreeNums(30, 2, 9)   // 135
+### 4. Parameters/Arguments
+
+There are a few tidbits about parameters/arguments to ponder:
+
+- So, let's answer a common question:  _"What's the difference between a parameter and an argument?"_
+
+	<img src="https://i.imgur.com/u5p9n7m.jpg">
+	
+- Parameters become local variables inside the function body. Therefore, in the example above, `bottle` and `cap` are variables that can be accessed anywhere within the function.
+  
+- Just like when naming variables and functions, it's important to name parameters using identifiers that are representative of the data they will hold.
+
+- Arguments (the data being passed in) are assigned to the parameters positionally. In the example above, the `bottle` parameter would be assigned the string "green bottle" because they are the first parameter and argument.
+
+#### Functions as Arguments
+
+In JavaScript, it's easy to pass around functions like data -  because they are - they're objects!
+  
+##### Passing an Anonymous Function
+
+Often functions or methods (functions attached to an object) will require a function be provided as an argument.  For example, the `forEach` method on arrays:
+	
+```js
+var a = ['red', 'green', 'blue'];
+	
+a.forEach(function(color) {
+  console.log(color);
+});
 ```
+	
+Since the function provided to the `forEach` will never be called anywhere else in the code, why create a separate named function and pass it in? **Anonymous functions** like shown above can really come in handy!
 
+##### PARAMETER/ARGUMENT REVIEW QUESTIONS
 
-<br>
-<hr>
+**❓ What's the difference between an _argument_ and a _parameter_?**
 
-## RETURN
+**❓ Explain how _arguments_ and _parameters_ are "matched up".**
+  
+### 5. Scope
 
-* `return` gives a function its value.
-* `return` stops the function.
+#### What is Scope?
 
-## return: give a function value
+In general, the concept of **scope** in computer programming pertains to the **accessibility** of variables and functions from a given point of the code. In other words, as you write a line of code, what variables and functions do you have access to?
 
-We specify the output of a function with the `return` statement. The `return` statement is different from `console.log()` in that we can use the _return value_ of a function to pass as data, whereas we cannot with a `console.log()`.
+If a line of code doesn't have access to a variable/function, we could say that variable/function is "out of scope".
 
-A contrived example:
+#### Types of Scope in JavaScript
 
-```javascript
-const ten = () => {
-	return 10;
+JavaScript has three types of scope:
+
+- **Global scope**
+- **Function scope**, also known as **local scope**
+- **Block scope** courtesy of ES2015's `let` & `const`
+
+#### Why the Different Types of Scope?
+
+There's a concept in programming known as **The Principle of Least Access**.
+
+This principle is based on the idea that limiting the accessibility of variables (and functions) helps reduce bugs in the code - think of it as a form of "code safety".
+
+#### Global Scope
+
+There's only a single global scope.
+
+If a variable is declared outside of a function, it will "live" in global scope.
+
+```js
+// main.js
+
+let size, board;
+
+function initialize() {
+  size = getBoardSize();
+  board = generateBoard(size);
+  renderBoard();
 }
 ```
 
-```javascript
-console.log(8 + ten());
+**❓ What variable/function identifiers above exist in global scope?**
 
-=> 18
-```
+#### Function (local) Scope
 
-This is the main difference between `return` and `console.log()`. The output value of a function can not come from a console.log.
+A new function scope is created for each executing function.
 
-```javascript
-const ten = () => {
-	console.log(10);
+Each variable declared at the function level would be included within that function's scope regardless of whether `var`, `let` or `const` is used.
+
+The variables within a function's scope only exist during its execution (unless something known as a "closure" exists - yup, another day).
+
+```js
+function initialize() {
+  const playerName = getPlayerName();
+  size = getBoardSize();
+  board = generateBoard(size, playerName);
+  renderBoard();
 }
 ```
 
-```javascript
-console.log(8 + ten());
+**❓ What variable/function identifiers above exist in the `initialize` function's scope?**
 
-=> 10
-=> NaN
-```
+A major benefit of having different scopes, however, is being able to use the same names for variables in different functions!  If there were only one scope, this wouldn't be possible.
 
-This is because it is trying to add 8 to `undefined`.
+#### Block Scope
 
-A function is only **defined** if it has a return value.
+To give you practice reading and researching independently, the topic of block scope is covered in the Further Study section of this lesson. 
 
-```javascript
-const multiply = function(num1, num2) {
-	return num1 * num2;
+#### Examples of Scope
+
+Let's review the following diagram demonstrates both _global_ and _function_ scope:
+
+![](https://i.imgur.com/UtIoe7F.png)
+
+The diagram identifies 3 different scopes along with the identifiers (variables and functions) that live within each scope.
+
+##### You can look out, but you can't look in!
+
+A key takeaway is that functions have access to the set of variables and functions defined within their own scope AND in the **outer** scopes.
+
+Basically, when a line of code accesses a variable (or function), JS will traverse up the **scope chain** until it finds what it's looking for.
+
+If the JS runtime engine gets to the _global scope_ (which is the top of the food chain in the scope hierarchy) and still can't find what it's looking for, that's when your program ceases due to a **ReferenceError**.
+
+**❓ Does the function `foo` have access to the variable `c`?**
+
+**Any questions before moving on the lab where you'll practice writing several functions?**
+
+### 6. Further Study
+
+##### Fewer Arguments Than Parameters Defined
+
+JavaScript is very flexible and won't complain when the number of arguments is not the same as the number of parameters defined.
+
+If fewer arguments are passed than parameters defined, then the parameter variables without a matching argument would be set to `undefined`.
+
+> Note: Unlike some other programming languages, JavaScript won't complain if fewer (or extra) arguments are passed to a function.  However, a function that depends on certain arguments to do its job might throw an error or return an unexpected result if it doesn't receive the arguments expected.
+
+##### Extra Arguments Than Parameters Defined
+
+Let's pretend you need to write a function that accepts an unknown number of arguments.
+
+For example, let's say we would like to be able to provide any number of "time" arguments to the `getPointsScored ` function we saw earlier and return a total number of points scored.
+
+First, let's ignore the fact that typically we could code the function to accept an array of times, e.g.,
+
+```js
+function getPointsScored(elapsedTimes) {
+  // code to iterate over the elapsedTimes array...
 }
 ```
 
-The `multiply` function has a **return value** of `num1` * `num2`. It does not just print to the console.
+Here's how we could write `getPointsScored` to accept any number of individual "time" arguments using ES2015's [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters):
 
-## console.log a function with a return value
-
-Sometimes a returned value will not appear in your console. This is normal. **A return is not a console.log**. To see the return value of a function, you will want to console.log the invocation:
-
-```javascript
-console.log(multiply(2, 10));
+```js
+function getPointsScored(...times) {
+  // times will be an array holding the args
+  // Perfect use case for the Array.reduce method, but that's another day...
+  let totalPoints = 0;
+  times.forEach(function(time) {
+    if (time < 30) {
+      totalPoints += 100;
+    } else if (time < 60) {
+      totalPoints += 75;
+      return 75;
+    } else {
+      totalPoints += 25;
+    }
+  });
+  return totalPoints;
+}
+	
+const points = getPointsScored(16, 99, 32, 60);
 ```
 
-> => 20
+**❓ What would the `times` parameter hold when `getPointsScored` is invoked as above?**
 
-- Since `multiply` **returns** a value, we can use the return value of `multiply` as an argument to an invocation of `multiply`.
+> Note:  Prior to ES2015, we would use the special [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) keyword available within non-arrow functions. `arguments` is a JS object that has a `length` property and allows its values to be accessed via _square bracket_ notation.
 
-```javascript
-console.log(multiply(multiply(2, 3), multiply(9, 4)));
+##### ES2015 Default Parameters
+
+What if your function requires certain arguments and you want to provide a default value for the parameter if an argument is not supplied when the function is invoked?
+
+Prior to ES2015, here is trivial example of what we had to do:
+
+```js
+function setColor(bicycle, color) {
+  // set color to 'purple' if not provided
+  bicycle.color = color || 'purple';
+}
+
+var bike = new Bicycle();
+setColor(bike, 'blue');  // sets color to blue
+setColor(bike);  // sets color to purple by default
+```
+Now, using **default parameters**, we can do this:
+
+```js
+function setColor(bicycle, color = 'purple') {
+  bicycle.color = color;
+}
 ```
 
-> => 216
+Any expression can be provided as a default, including objects, etc.
 
-## return: stopping a function
+##### Immediately Invoked Function Expressions (IIFE)
 
-**RETURN** sends the value of your function immediately. You can use **return** to terminate the function.
+One way we can prevent our code from leaking into the global scope is by wrapping it with a construct known as an **Immediately Invoked Function Expression**, or "IIFE" (pronounced "iffy").  It looks like this:
 
-Example: will the function return 0 or 1? (It won't return both)
+```js
+(function() {
+  'use strict';
 
-```javascript
-const example = (input) => {
-	if (input == "none") return 0;
-	return 1;
-};
+  // your code here...
+	
+})();
+```
+**❓ Why does this construct virtually prevent variables and functions from being created in the global scope?**
+
+##### Block Scope
+
+Both `let` and `const` define variables that can only be accessed within the **code block** they are defined in.
+
+A _code block_ is created by using curly braces.
+
+The following code from [MDN's docs about let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) demonstrates differences between `let` and `var`:
+
+```js
+function varTest() {
+  var x = 1;
+  if (true) {
+    var x = 2;  // same variable!
+    console.log(x);  // 2
+  }
+  console.log(x);  // 2
+}
+
+function letTest() {
+  let x = 1;
+  if (true) {
+    let x = 2;  // different variable
+    console.log(x);  // 2
+  }
+  console.log(x);  // 1
+}
 ```
 
-```javascript
-example("none")     // 0
-example("two");     // 1
-```
+and another example of their differences:
 
-&#x1F535; **Activity**
-
-* Write a function `calculateArea` that takes two parameters `width` and `length` and multiplies them. This will give us the area of a rectangle.
-* Invoke the function a couple of times with different arguments each time
-
-&#x1F535; **Activity and Research**
-
-* Write a function that takes three parameters (numbers), sums them, converts the sum into a string and returns the string (eg. `"123"`)
-* Use your google-fu to research converting a number into a string
-* Invoke the function a couple of times with different arguments each time
-
-&#x1F535; **Extra**
-
-* Write a function that takes two parameters (strings) and returns `true` (Boolean) if the two strings are identical, `false` if not.
-
-&#x1F535; **Experiment**
-
-* What happens if you supply more arguments than there are parameters?
-* What happens if you supply fewer arguments than there are parameters?
-
-<br>
-<hr>
-
-# Problem-solving
-
-### Palindrome
-
-Writing a function to determine if a word is a Palindrome.
-
-Pseudo-code and work in layers, one layer at a time. Don't jump ahead until each piece has been tested and works.
-
-* reverse the word (how?)
-* check if the word is the same as the reverse (how?)
-* return true or false
-
-<br>
-<hr>
-
-# Extra stuff: more on built-in methods
-
-## String and array methods
-
-**Refresher**
-
-A method can be chained to a variable to perform an action. Example:
-
-```javascript
-const message = "hello there";
-
-console.log(message.toUpperCase());
-```
-
-> => "HELLO THERE"
-
-`.toUpperCase()` is a **method**.
-
-<br>
-
-
-## Datatypes
-
-There are different methods for different **datatypes**.
-
-Strings have different methods than arrays. In general, you can't use array methods on strings and vice versa.
-
-Example of an **array** method:
-
-```javascript
-const letters = ['A', 'B', 'C', 'D'];
-
-console.log(letters.join(''));
-```
-
-> => ABCD
-
-`.join()` is a **method**, but it is only for arrays.
-
-
-It will not work on a string:
-
-```javascript
-const letters = "ABCD";
-
-console.log(letters.join(''));
-```
-
-![](https://i.imgur.com/Ire2ntQ.png)
-
-> Here, `letters.join` is not a function because `.join` is not a method you can use on strings. See: TypeError
-
-
-**.length is a method you can use on both strings and arrays**
-
-<br>
-
-## Methods can change the datatype
-
-If we use `.join('')` on an array as intended:
-
-```javascript
-const letters = ['A', 'B', 'C', 'D'];
-
-console.log(letters.join(''));
-```
-
-It will however output a **string**. Be mindful of this when it comes to **chaining methods**.
-
-For example `.reverse()` is an **array** method.
-
-```
-console.log(letters.join.reverse());
-```
-
-![](https://i.imgur.com/NuPCUDB.png)
-
-It will not work because the result of `letters.join('')` is a string.
-
-<br>
-
-## Chaining built-in methods
-
-You can chain methods together:
-
-```javascript
-const str = "doodly doo";
-
-console.log(str.split('').length);
-```
-
-> => 10
-
-**Be mindful of datatypes**
-
-This will not work:
-
-```javascript
-const str = "doodly doo";
-
-console.log(str.split('').toUpperCase);
-```
-
-![](https://i.imgur.com/LDYjytH.png)
-
-&#x1F535; **Why Not?**
-
-Notice the error says `TypeError`. This is a big indicator as to what the problem is.
-
-We are trying to use `.toUpperCase()` on the wrong type of data. In this case, we are trying to use it on an array, when it is not an array method. It is a string method.
-
-&#x1F535; **Activity**
-
-RESEARCH
-
-How can you reverse a string?
-
-* Try to use `.reverse()` on a **string**. Does it work?
-
-* If it does not work, what is the error telling you?
-
-* Try to use `.reverse()` on an array instead. Does it work?
-
-There is no `.reverse()` method for strings, but there _is_ one for arrays.
-
-
-&#x1F535; **Activity**
-
-Using method chaining, figure out how to turn a string into an array, reverse the array, and turn the reversed array back into a string. This is one way to reverse a string. Chain the methods together on one line.
-
-[Some string methods](https://www.w3schools.com/js/js_string_methods.asp)
-
-[Some array methods](https://www.w3schools.com/js/js_array_methods.asp)
-
-<br>
-
-&#x1F535; **Extra**
-
-Look into `regular expressions` and the [.match()](https://www.w3schools.com/jsref/jsref_match.asp) method. Use `.match()` only to select parts of a reversed string that match a pattern.
-
-&#x1F535; **Extra**
-
-Start in on this [regular expressions](https://regexone.com/) exercise.
-
-<br>
-<hr>
-
+<img src="https://i.imgur.com/K0uJx2P.jpg">
 
 ##### More About Global Scope
 
