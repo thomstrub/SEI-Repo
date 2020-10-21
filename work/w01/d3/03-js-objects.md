@@ -1,6 +1,5 @@
 <img src="https://i.imgur.com/DEsPVNw.png" height="400">
 
-<img src="https://i.imgur.com/DEsPVNw.png" height="400">
 
 # Intro to JavaScript Objects
 
