@@ -12,7 +12,7 @@ This lab provides an opportunity to practice defining and coding some real-world
 
 #### Setup & Instructions
 
-Create a new HTML/CSS/JS repl in [repl.it](https://repl.it) for these exercises.
+Create a new HTML/CSS/JS folder like we did in class today 
 
 Title your repl **JS Function Lab**.
 
