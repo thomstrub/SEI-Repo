@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 const titleEl = document.getElementById('title');
 
 titleEl.style.textAlign = 'center';
@@ -10,6 +10,7 @@ titleEl.style.textAlign = 'center';
 
 titleEl.innerText = "Title made by JS"
 
+// selecting a class!
 const pEl = document.querySelector('.cool');
 console.log(pEl, 'elemnt')
 pEl.style.color = 'rgb(243, 245, 100)';
@@ -19,39 +20,12 @@ pEl.style.color = 'rgb(243, 245, 100)';
 // pEl.textContent = 'Comments for <strong>Today</strong>'pEl.textContent = 'Comments for <strong>Today</strong>';
 pEl.innerHTML = 'Comments for <strong>Today</strong>';
 
+// selecting a link
 const aLinkGoogle = document.querySelector('a');
 
 console.log(aLinkGoogle)
-
+// setting an attribute on the fly!
 aLinkGoogle.setAttribute('href', 'https://www.google.com');
-
-const commentEls = document.querySelectorAll('.comment');
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> bd698cb81e5595c3c1040d6031573f34fdfd97fa
 
 console.log(commentEls)
 
