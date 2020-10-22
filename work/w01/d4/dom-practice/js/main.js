@@ -27,7 +27,7 @@ console.log(aLinkGoogle)
 // setting an attribute on the fly!
 aLinkGoogle.setAttribute('href', 'https://www.google.com');
 
-const commentEls = document.querySelectorAll('.comments')
+const commentEls = document.querySelectorAll('#comments')
 // checking to see if I selected comments
 console.log(commentEls)
 
