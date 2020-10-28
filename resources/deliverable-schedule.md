@@ -12,4 +12,5 @@ It is a requirement to complete at least **80%** of the following to to receive:
 |---|---|---|
 |Ongoing (each challenge counts as a single deliverable)|[Daily Code Challenges](https://git.generalassemb.ly/SEI-CC/daily-js-code-challenges)| |
 | 10/20 |[Array lab](https://git.generalassemb.ly/SEI-CC/SEI-R-10-19/blob/master/work/w01/d2/04-js-arrays-lab.md)| 10/26 is last call, (but should be done by 21) |
+| 10/28 |[Array Method lab](https://git.generalassemb.ly/SEI-CC/SEI-R-10-19/blob/master/work/w02/d3/04-array-methods-lab.md)| 11/04 is last call, (but should be done tonight 10/28!) |
 
