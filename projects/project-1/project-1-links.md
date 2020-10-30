@@ -20,5 +20,5 @@
 | Sara|  | War | []() | []() |
 | Sheetal|  | Connect Four | []() | []() |
 | Thom|  | Minesweeper| [link](https://github.com/thomstrub/contact-tracer) | []() |
-| Vanessa|  |  | [link](https://github.com/vkosiyan/Minesweeper) | []() |
+| Vanessa|  | Minesweeper  | [link](https://github.com/vkosiyan/Minesweeper) | []() |
 | Kory|  | Battleship | [link](https://github.com/DangerousKoin/pumpkin_battle) | []() |
