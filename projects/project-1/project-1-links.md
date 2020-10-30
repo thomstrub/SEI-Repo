@@ -2,23 +2,23 @@
 
 | Student | Region | Game | GitHub | Deployed App |
 |---|:---:|:---:|:---:|:---:|
-| Aaron B|  | Slot Machine | [link]() | [link]() |
-|Alexey Ya|  | Black Jack | [link]() | [link]() |
-| Alejandro Alférez|  | Black Jack | [link]() | [link]() |
-| Jeremy Durden |  | Minesweeper | [link]() | [link]() |
-| Joey Rebbe |  | Slot Machine | [link]() | [link]() |
-| Jenna Bouche|  | Card Memory Game | [link]() | [link]() |
-| Richard |  | war | [link]() | [link]() |
-| Nairobi Dunk|  | Anime Game | [link]() | [link]() |
-| Rylee Shearer|  | Connect four | [link]() | [link]() |
-| James|  | Simon Says | [link]() | [link]() |
-| Angeline|  | Battleship| [link]() | [link]() |
-| Andrew|  | Black Jack | [link]() | [link]() |
-| Mehrdad|  | Stones, Fill It | [link]() | [link]() |
-| Juan|  |  | [link]() | [link]() |
-| Kyle|  |  | [link]() | [link]() |
-| Sara|  | War | [link]() | [link]() |
-| Sheetal|  | Connect Four | [link]() | [link]() |
-| Thom|  | Minesweeper| [link]() | [link]() |
-| Vanessa|  |  | [link]() | [link]() |
-| Kory|  | Battleship | [link]() | [link]() |
+| Aaron B|  | Slot Machine | []() | []() |
+|Alexey Ya|  | Black Jack | []() | []() |
+| Alejandro Alférez|  | Black Jack | []() | []() |
+| Jeremy Durden |  | Minesweeper | []() | []() |
+| Joey Rebbe |  | Slot Machine | []() | []() |
+| Jenna Bouche|  | Card Memory Game | []() | []() |
+| Richard |  | war | []() | []() |
+| Nairobi Dunk|  | Anime Game | []() | []() |
+| Rylee Shearer|  | Connect four | []() | []() |
+| James|  | Simon Says | []() | []() |
+| Angeline|  | Battleship| [link](https://github.com/DTAngie/BattleBugs) | []() |
+| Andrew|  | Black Jack | [link](https://github.com/andrewdang12/BlackJack-21) | []() |
+| Mehrdad|  | Stones, Fill It | [link](https://github.com/SamiaMehrdad/Jump-O-Where) | []() |
+| Juan|  |  | []() | []() |
+| Kyle|  |  | [link](https://github.com/kylelainez/Chess-Game) | []() |
+| Sara|  | War | []() | []() |
+| Sheetal|  | Connect Four | []() | []() |
+| Thom|  | Minesweeper| [link](https://github.com/thomstrub/contact-tracer) | []() |
+| Vanessa|  |  | [link](https://github.com/vkosiyan/Minesweeper) | []() |
+| Kory|  | Battleship | [link](https://github.com/DangerousKoin/pumpkin_battle) | []() |
