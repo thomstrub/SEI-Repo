@@ -5,7 +5,7 @@
 | Aaron B|  | Slot Machine | []() | []() |
 |Alexey Ya|  | Black Jack | []() | []() |
 | Alejandro Alférez|  | Black Jack | [link](https://github.com/alexalferez/Blackjack_project) | []() |
-| Jeremy Durden |  | Minesweeper | []() | []() |
+| Jeremy Durden |  | Minesweeper | [link](https://github.com/jeremydurden/SEI---First-Project---Minesweeper) | []() |
 | Joey Rebbe |  | Slot Machine | []() | []() |
 | Jenna Bouche|  | Card Memory Game | [link](https://github.com/jlbouche/Mario_Matching_Game) | []() |
 | Richard |  | war | []() | []() |
@@ -18,7 +18,7 @@
 | Juan|  |  | []() | []() |
 | Kyle|  | chess | [link](https://github.com/kylelainez/Chess-Game) | []() |
 | Sara|  | War | []() | []() |
-| Sheetal|  | Connect Four | []() | []() |
+| Sheetal|  | Connect Four | [link](https://github.com/sdheer296/game_project_connect4) | []() |
 | Thom|  | Minesweeper| [link](https://github.com/thomstrub/contact-tracer) | []() |
 | Vanessa|  | Minesweeper  | [link](https://github.com/vkosiyan/Minesweeper) | []() |
 | Kory|  | Battleship | [link](https://github.com/DangerousKoin/pumpkin_battle) | []() |
