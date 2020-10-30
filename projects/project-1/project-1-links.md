@@ -7,7 +7,7 @@
 | Alejandro Alférez|  | Black Jack | []() | []() |
 | Jeremy Durden |  | Minesweeper | []() | []() |
 | Joey Rebbe |  | Slot Machine | []() | []() |
-| Jenna Bouche|  | Card Memory Game | []() | []() |
+| Jenna Bouche|  | Card Memory Game | [link](https://github.com/jlbouche/Mario_Matching_Game) | []() |
 | Richard |  | war | []() | []() |
 | Nairobi Dunk|  | Anime Game | []() | []() |
 | Rylee Shearer|  | Connect four | []() | []() |
