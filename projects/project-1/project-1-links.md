@@ -6,7 +6,7 @@
 |Alexey Ya|  | Black Jack | []() | []() |
 | Alejandro Alférez|  | Black Jack | [link](https://github.com/alexalferez/Blackjack_project) | []() |
 | Jeremy Durden |  | Minesweeper | [link](https://github.com/jeremydurden/SEI---First-Project---Minesweeper) | []() |
-| Joey Rebbe |  | Slot Machine | []() | []() |
+| Joey Rebbe |  | Slot Machine | [link](https://github.com/joeyrebbe/Show_Me_What_You_Slot) | []() |
 | Jenna Bouche|  | Card Memory Game | [link](https://github.com/jlbouche/Mario_Matching_Game) | []() |
 | Richard |  | war | []() | []() |
 | Nairobi Dunk|  | Anime Game | []() | []() |
