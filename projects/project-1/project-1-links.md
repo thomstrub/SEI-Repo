@@ -16,7 +16,7 @@
 | Andrew|  | Black Jack | [link](https://github.com/andrewdang12/BlackJack-21) | []() |
 | Mehrdad|  | Stones, Fill It | [link](https://github.com/SamiaMehrdad/Jump-O-Where) | []() |
 | Juan|  |  | []() | []() |
-| Kyle|  |  | [link](https://github.com/kylelainez/Chess-Game) | []() |
+| Kyle|  | chess | [link](https://github.com/kylelainez/Chess-Game) | []() |
 | Sara|  | War | []() | []() |
 | Sheetal|  | Connect Four | []() | []() |
 | Thom|  | Minesweeper| [link](https://github.com/thomstrub/contact-tracer) | []() |
