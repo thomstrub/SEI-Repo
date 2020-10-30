@@ -4,7 +4,7 @@
 |---|:---:|:---:|:---:|:---:|
 | Aaron B|  | Slot Machine | []() | []() |
 |Alexey Ya|  | Black Jack | []() | []() |
-| Alejandro Alférez|  | Black Jack | []() | []() |
+| Alejandro Alférez|  | Black Jack | [link](https://github.com/alexalferez/Blackjack_project) | []() |
 | Jeremy Durden |  | Minesweeper | []() | []() |
 | Joey Rebbe |  | Slot Machine | []() | []() |
 | Jenna Bouche|  | Card Memory Game | [link](https://github.com/jlbouche/Mario_Matching_Game) | []() |
