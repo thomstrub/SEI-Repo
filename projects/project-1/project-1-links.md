@@ -8,7 +8,7 @@
 | Jeremy Durden |  | Minesweeper | [link](https://github.com/jeremydurden/SEI---First-Project---Minesweeper) | []() |
 | Joey Rebbe |  | Slot Machine | [link](https://github.com/joeyrebbe/Show_Me_What_You_Slot) | []() |
 | Jenna Bouche|  | Card Memory Game | [link](https://github.com/jlbouche/Mario_Matching_Game) | []() |
-| Richard |  | war | []() | []() |
+| Richard |  | war | [link](https://github.com/apocpax/projectwar) | []() |
 | Nairobi Dunk|  | Anime Game | []() | []() |
 | Rylee Shearer|  | Connect four | []() | []() |
 | James|  | Simon Says | [link](https://github.com/jamesjkim88/GA-Project-1-Simon-Says) | []() |
@@ -17,7 +17,7 @@
 | Mehrdad|  | Stones, Fill It | [link](https://github.com/SamiaMehrdad/Jump-O-Where) | []() |
 | Juan|  |  | []() | []() |
 | Kyle|  | chess | [link](https://github.com/kylelainez/Chess-Game) | []() |
-| Sara|  | War | []() | []() |
+| Sara|  | War | [link](https://github.com/Areidra/War-Card-Game-.git) | []() |
 | Sheetal|  | Connect Four | [link](https://github.com/sdheer296/game_project_connect4) | []() |
 | Thom|  | Minesweeper| [link](https://github.com/thomstrub/contact-tracer) | []() |
 | Vanessa|  | Minesweeper  | [link](https://github.com/vkosiyan/Minesweeper) | []() |
