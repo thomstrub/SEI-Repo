@@ -3,7 +3,7 @@
 | Student | Region | Game | GitHub | Deployed App |
 |---|:---:|:---:|:---:|:---:|
 | Aaron B|  | Slot Machine | []() | []() |
-|Alexey Ya|  | Black Jack | []() | []() |
+|Alexey Ya|  | Black Jack | [link](https://github.com/aleksyara/game-project | []() |
 | Alejandro Alférez|  | Black Jack | [link](https://github.com/alexalferez/Blackjack_project) | []() |
 | Jeremy Durden |  | Minesweeper | [link](https://github.com/jeremydurden/SEI---First-Project---Minesweeper) | []() |
 | Joey Rebbe |  | Slot Machine | [link](https://github.com/joeyrebbe/Show_Me_What_You_Slot) | []() |
@@ -22,3 +22,4 @@
 | Thom|  | Minesweeper| [link](https://github.com/thomstrub/contact-tracer) | []() |
 | Vanessa|  | Minesweeper  | [link](https://github.com/vkosiyan/Minesweeper) | []() |
 | Kory|  | Battleship | [link](https://github.com/DangerousKoin/pumpkin_battle) | []() |
+|Latina|  | ? | [link](https://github.com/LatinaS4/Firstgame) | []() |
