@@ -15,7 +15,7 @@
 | Angeline|  | Battleship| [link](https://github.com/DTAngie/BattleBugs) | []() |
 | Andrew|  | Black Jack | [link](https://github.com/andrewdang12/BlackJack-21) | []() |
 | Mehrdad|  | Stones, Fill It | [link](https://github.com/SamiaMehrdad/Jump-O-Where) | []() |
-| Juan|  |  | []() | []() |
+| Juan|  |  | [link](https://github.com/Juan-Rivera222/Connect-Four) | []() |
 | Kyle|  | chess | [link](https://github.com/kylelainez/Chess-Game) | []() |
 | Sara|  | War | [link](https://github.com/Areidra/War-Card-Game-.git) | []() |
 | Sheetal|  | Connect Four | [link](https://github.com/sdheer296/game_project_connect4) | []() |
