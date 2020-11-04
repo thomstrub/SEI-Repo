@@ -2,7 +2,7 @@
 
 | Student | Region | Game | GitHub | Deployed App |
 |---|:---:|:---:|:---:|:---:|
-| Aaron B|  | Slot Machine | []() | []() |
+| Aaron B|  | Slot Machine | [link](https://github.com/aaronbe7/game_project) | []() |
 |Alexey Ya|  | Black Jack | [link](https://github.com/aleksyara/game-project) | []() |
 | Alejandro Alférez|  | Black Jack | [link](https://github.com/alexalferez/Blackjack_project) | []() |
 | Jeremy Durden |  | Minesweeper | [link](https://github.com/jeremydurden/SEI---First-Project---Minesweeper) | []() |
@@ -10,7 +10,7 @@
 | Jenna Bouche|  | Card Memory Game | [link](https://github.com/jlbouche/Mario_Matching_Game) | []() |
 | Richard |  | war | [link](https://github.com/apocpax/projectwar) | []() |
 | Nairobi Dunk|  | Anime Game | [link](https://github.com/NairobiSheikh/AvatarTheLastAirbender.git) | []() |
-| Rylee Shearer|  | Connect four | []() | []() |
+| Rylee Shearer|  | Connect four | [link](https://git.generalassemb.ly/shearryl000/connect_four) | []() |
 | James|  | Simon Says | [link](https://github.com/jamesjkim88/GA-Project-1-Simon-Says) | []() |
 | Angeline|  | Battleship| [link](https://github.com/DTAngie/BattleBugs) | []() |
 | Andrew|  | Black Jack | [link](https://github.com/andrewdang12/BlackJack-21) | []() |
