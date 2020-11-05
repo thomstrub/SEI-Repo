@@ -14,7 +14,7 @@
 | James|  | Simon Says | [link](https://github.com/jamesjkim88/GA-Project-1-Simon-Says) | []() |
 | Angeline|  | Battleship| [link](https://github.com/DTAngie/BattleBugs) | []() |
 | Andrew|  | Black Jack | [link](https://github.com/andrewdang12/BlackJack-21) | []() |
-| Mehrdad|  | Stones, Fill It | [link](https://github.com/SamiaMehrdad/Jump-O-Where) | []() |
+| Mehrdad|  | Stones, Fill It | [link](https://github.com/SamiaMehrdad/Jump-O-Where) | [link](https://samiamehrdad.github.io/Jump-O-Where/) |
 | Juan|  | connect four | [link](https://github.com/Juan-Rivera222/Connect-Four) | []() |
 | Kyle|  | chess | [link](https://github.com/kylelainez/Chess-Game) | []() |
 | Sara|  | War | [link](https://github.com/Areidra/War-Card-Game-.git) | []() |
