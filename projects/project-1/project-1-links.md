@@ -9,7 +9,7 @@
 | Joey Rebbe |  | Slot Machine | [link](https://github.com/joeyrebbe/Show_Me_What_You_Slot) | [link](https://joeyrebbe.github.io/deepslot/) |
 | Jenna Bouche|  | Card Memory Game | [link](https://github.com/jlbouche/Mario_Matching_Game) | [link](https://jlbouche.github.io/Mario_Matching_Game/) |
 | Richard |  | war | [link](https://github.com/apocpax/projectwar) | [link](https://apocpax.github.io/projectwar/) |
-| Nairobi Dunk|  | Anime Game | [link](https://github.com/NairobiSheikh/AvatarTheLastAirbender.git) | []() |
+| Nairobi Dunk|  | Anime Game | [link](https://github.com/NairobiSheikh/AvatarTheLastAirbender.git) | [link](https://nairobisheikh.github.io/AvatarTheLastAirbender/) |
 | Rylee Shearer|  | Connect four | [link](https://git.generalassemb.ly/shearryl000/connect_four) | [link](https://pages.git.generalassemb.ly/shearryl000/connect_four/) |
 | James|  | Simon Says | [link](https://github.com/jamesjkim88/GA-Project-1-Simon-Says) | [link](https://jamesjkim88.github.io/GA-Project-1-Simon-Says/) |
 | Angeline|  | Battleship| [link](https://github.com/DTAngie/BattleBugs) | [link](https://dtangie.github.io/BattleBugs/) |
