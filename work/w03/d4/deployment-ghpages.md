@@ -23,6 +23,8 @@ Typical **static assets** include:
 
 ## Deploying with ghpages
 
+# NOTE IF YOUR BRANCH IS MAIN INSTEAD OF MASTER USE, MAIN WHEREVER YOU SEE MASTER
+
 #### Ensure your project is ready to deploy
 
 Make sure that your project is working - it does not make sense to deploy a broken app!
