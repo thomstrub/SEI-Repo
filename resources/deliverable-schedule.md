@@ -16,4 +16,4 @@ It is a requirement to complete at least **80%** of the following to to receive:
 
 | 11/12 |[Express Dev skills](https://git.generalassemb.ly/SEI-CC/SEI-R-10-19/blob/master/work/w4/d3/04-dev-skills-lab-part-2.md)| 11/19 is last call, (but should be done tonight 11/14!) |
 
-| 11/17 |[Mongoose Flights]()| 11/19 is last call, (but should be done tonight 11/14!) |
+| 11/17 |[Mongoose Flights](https://git.generalassemb.ly/SEI-CC/SEI-R-10-19/blob/master/work/w5/d2/mongoose-flights-lab-part-3.md)| 11/24 is last call, (but should be done tonight 11/18! Be sure to complete it before your project!) |
