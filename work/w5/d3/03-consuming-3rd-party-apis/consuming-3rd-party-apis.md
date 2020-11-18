@@ -187,7 +187,9 @@ $ npm install request
 
 The `request` module is callback-based and has been "deprecated" (no further development) - however, with nearly 20 million weekly downloads, it's not going anywhere!
 
-Once learning about promises (very soon), you can use [request-promise-native](https://www.npmjs.com/package/request-promise-native).
+If you want to use Promises, you can use [request-promise-native](https://www.npmjs.com/package/request-promise-native) or [axios](https://www.npmjs.com/package/axios)
+
+PS. Remember where ever a promise is used and you see the `.then` syntax being used, you can augment that to use `async & await` as you please
 
 Now lets require it in **routes/index.js**:
 
