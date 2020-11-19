@@ -187,9 +187,7 @@ We will complete these stories today:
 
 6. Create a `.env` file:  `touch .env`
 
-7. Add a key of `DATABASE_URL` and assign it the database connection string value provided by yours truly
-
-8. `nodemon` and browse to `localhost:3000` to test.
+7. `nodemon` and browse to `localhost:3000` to test.
 
 ## Review the Starter Code
 
@@ -209,15 +207,11 @@ We will complete these stories today:
 
 - The `key=value` pairs in `.env` are being attached to Node's `process.env` object on line 7 of **server.js**.
 
-- Then, on line 3 of **config/database.js**, the database is connecting to the value held by `process.env.DATABASE_URL`.
+
 
 > IMPORTANT:  All environment variables listed in `.env` will need to be set on the server after the app has been deployed. This will be covered when we walk-thru deployment next week.
 
-#### Hosted MongoDB
 
-- Instead of using a local MongoDB database, we are connecting to a MongoDB hosted in the cloud so that we can see each other's fun facts!
-
-- Early on in your project, you will want to use a hosted database as well - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is the goto cloud-based provider of MongoDB databases.
 
 - In the **students/index.ejs** view, the `<form action="/students" method="GET">` element submits a _search_ to the server.
 
