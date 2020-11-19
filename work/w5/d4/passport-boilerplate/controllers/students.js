@@ -27,7 +27,13 @@ function index(req, res, next) {
 }
 
 function addFact(req, res, next) {
-  
+  console.log(req.user)// req.user is a mongoose document
+
+  req.user.facts.push(req.body);
+  req.user.save(function(err){
+    res.redirect('/students')
+  })
+
 }
 
 function delFact(req, res, next) {

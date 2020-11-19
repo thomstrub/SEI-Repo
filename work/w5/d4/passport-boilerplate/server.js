@@ -39,9 +39,17 @@ app.use(session({
   saveUninitialized: true
 }));
 
-app.use(passport.initialize());
+app.use(passport.initialize()); // straight from the docs
 app.use(passport.session());
 
+
+// to make sure req.user is accessible in every view
+app.use(function(req, res, next){
+  // attached to locals is what the property/variable that will be availible throughout our application 
+  // in ejs
+  res.locals.user = req.user; // if we are not logged in req.user will be undefined
+  next();
+})
 
 // mount all routes with appropriate base paths
 app.use('/', indexRoutes);
