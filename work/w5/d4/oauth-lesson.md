@@ -386,7 +386,6 @@ Time to register our app...
 - Let's add the credentials, along with that callback URI we provided, to the `.env` file so that it looks something like this:
 
 	```
-	DATABASE_URL=mongodb+srv://<user>:<pw>@sei-students-1btwt.azure.mongodb.net/students?retryWrites=true
 	GOOGLE_CLIENT_ID=245025414219-2r7f4bvh3t88s3shh6hhagrki0f6op8t.apps.googleusercontent.com
 	GOOGLE_SECRET=Yn9T_2BKzxr4zgprzKDGI5j3
 	GOOGLE_CALLBACK=http://localhost:3000/oauth2callback
@@ -655,7 +654,7 @@ However, in order to find a user in our database by their _Google Id_, we're goi
 Let's add a property for `googleId` to our `studentSchema` inside `models/student.js` file:
 
 ```js
-var studentSchema = new mongoose.Schema({
+const studentSchema = new mongoose.Schema({
   name: String,
   email: String,
   cohort: String,
