@@ -187,9 +187,7 @@ We will complete these stories today:
 
 6. Create a `.env` file:  `touch .env`
 
-7. Add a key of `DATABASE_URL` and assign it the database connection string value provided by yours truly
-
-8. `nodemon` and browse to `localhost:3000` to test.
+7. `nodemon` and browse to `localhost:3000` to test.
 
 ## Review the Starter Code
 
@@ -209,15 +207,11 @@ We will complete these stories today:
 
 - The `key=value` pairs in `.env` are being attached to Node's `process.env` object on line 7 of **server.js**.
 
-- Then, on line 3 of **config/database.js**, the database is connecting to the value held by `process.env.DATABASE_URL`.
+
 
 > IMPORTANT:  All environment variables listed in `.env` will need to be set on the server after the app has been deployed. This will be covered when we walk-thru deployment next week.
 
-#### Hosted MongoDB
 
-- Instead of using a local MongoDB database, we are connecting to a MongoDB hosted in the cloud so that we can see each other's fun facts!
-
-- Early on in your project, you will want to use a hosted database as well - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is the goto cloud-based provider of MongoDB databases.
 
 - In the **students/index.ejs** view, the `<form action="/students" method="GET">` element submits a _search_ to the server.
 
@@ -392,7 +386,6 @@ Time to register our app...
 - Let's add the credentials, along with that callback URI we provided, to the `.env` file so that it looks something like this:
 
 	```
-	DATABASE_URL=mongodb+srv://<user>:<pw>@sei-students-1btwt.azure.mongodb.net/students?retryWrites=true
 	GOOGLE_CLIENT_ID=245025414219-2r7f4bvh3t88s3shh6hhagrki0f6op8t.apps.googleusercontent.com
 	GOOGLE_SECRET=Yn9T_2BKzxr4zgprzKDGI5j3
 	GOOGLE_CALLBACK=http://localhost:3000/oauth2callback
@@ -661,7 +654,7 @@ However, in order to find a user in our database by their _Google Id_, we're goi
 Let's add a property for `googleId` to our `studentSchema` inside `models/student.js` file:
 
 ```js
-var studentSchema = new mongoose.Schema({
+const studentSchema = new mongoose.Schema({
   name: String,
   email: String,
   cohort: String,
