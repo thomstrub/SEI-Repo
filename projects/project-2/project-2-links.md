@@ -15,3 +15,4 @@
 | Vanessa |  | You-Should-Try | [link](https://github.com/vkosiyan/you-should-try) | [link](https://trello.com/b/flfEQG2v) | [link]() |
 | Jeremy |  | Climbing App | [link](https://github.com/jeremydurden/SEI-ProjectTwo-Climbing) | [link](https://trello.com/b/A3zmoKFJ/sei-project-two) | [link]() |
 | Alejandro |  | Music Playlists | [link](https://github.com/alexalferez/Music-Playlists) | [link](https://trello.com/b/ytWDt4jN/playlist) | [link]() |
+| Nairobo |  | Music Playlists | [link](https://github.com/NairobiSheikh/Inventory-System) | [link](hhttps://trello.com/b/YkySBjtI/project2-web-design-development) | [link]() |
