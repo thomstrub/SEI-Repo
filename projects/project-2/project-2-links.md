@@ -10,4 +10,6 @@
 | Thom|  | adventure-planner | [link](https://github.com/thomstrub/adventure-planner) | [link](https://trello.com/b/VRXEu1fN/hiking-adventure-planner-project-2) | [link]() |
 | Aleksei |  | e-sitter | [link](https://github.com/aleksyara/esitter) | [link](https://trello.com/b/g1sYLjTs/sei-10-19-project-2-esitter) | [link]() |
 | James Kim |  | Post | [link](https://github.com/jamesjkim88/GA-Project-2-Post) | [link](https://trello.com/b/wYut7ORE/seir-1019-project-2) | [link]() |
+| Aaron B |  | Music Rating | [link](https://github.com/aaronbe7/music-rating) | [link](https://trello.com/b/wXkEgNV0/sei-project-2) | [link]() |
+| Sheetal |  | Fitness App | [link](https://github.com/sdheer296/thefitnessapp) | [link](https://trello.com/b/xVpi5Nkl/fitness-app) | [link]() |
 
