@@ -12,7 +12,7 @@
 | James Kim |  | Post | [link](https://github.com/jamesjkim88/GA-Project-2-Post) | [link](https://trello.com/b/wYut7ORE/seir-1019-project-2) | [link]() |
 | Aaron B |  | Music Rating | [link](https://github.com/aaronbe7/music-rating) | [link](https://trello.com/b/wXkEgNV0/sei-project-2) | [link]() |
 | Sheetal |  | Fitness App | [link](https://github.com/sdheer296/thefitnessapp) | [link](https://trello.com/b/xVpi5Nkl/fitness-app) | [link]() |
-| Vanessa |  | You-Should-Try | [link](https://github.com/vkosiyan/you-should-try) | [link](https://trello.com/b/flfEQG2v) | [link]() |
+| Vanessa |  | You-Should-Try | [link](https://github.com/vkosiyan/you-should-try-app) | [link](https://trello.com/b/flfEQG2v) | [link]() |
 | Jeremy |  | Climbing App | [link](https://github.com/jeremydurden/SEI-ProjectTwo-Climbing) | [link](https://trello.com/b/A3zmoKFJ/sei-project-two) | [link]() |
 | Alejandro |  | Music Playlists | [link](https://github.com/alexalferez/Music-Playlists) | [link](https://trello.com/b/ytWDt4jN/playlist) | [link]() |
 | Nairobo |  | Inventory Systems| [link](https://github.com/NairobiSheikh/Inventory-System) | [link](https://trello.com/b/YkySBjtI/project2-web-design-development) | [link]() |
