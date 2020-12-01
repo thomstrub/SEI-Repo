@@ -17,3 +17,5 @@
 | Alejandro |  | Music Playlists | [link](https://github.com/alexalferez/Music-Playlists) | [link](https://trello.com/b/ytWDt4jN/playlist) | [link]() |
 | Nairobo |  | Inventory Systems| [link](https://github.com/NairobiSheikh/Inventory-System) | [link](https://trello.com/b/YkySBjtI/project2-web-design-development) | [link]() |
 | Sara |  | | [link](https://github.com/Areidra/Project2) | [link](https://trello.com/b/CdBUSAv8/project-2) | [link]() |
+| rylee |  | | [link](https://git.generalassemb.ly/shearryl000/project-2) | [link](https://trello.com/b/MfxApeRJ) | [link]() |
+| Kyle |  | | [link](https://github.com/kylelainez/Buy-and-Sale) | [link](https://trello.com/b/ljrr6rJm/buy-and-sell-website) | [link]() |
