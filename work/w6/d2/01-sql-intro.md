@@ -151,7 +151,7 @@ $ psql
 psql (12.4)
 Type "help" for help.
 
-jimclark=#
+jimhaff=#
 ```
 
 Here are some useful commands (note the use of a **backslash**):
