@@ -11,3 +11,7 @@ def fizzbuzz(max_num):
       print(num)
 
 fizzbuzz(20)
+
+my_number = 42
+
+my_number 
