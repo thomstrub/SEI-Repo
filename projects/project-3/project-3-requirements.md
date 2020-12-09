@@ -28,7 +28,7 @@ During this project, **your instructors are going to be evaluating your ability 
 
 ## Planning & Presentation Requirements
 
-### Planning - Due Monday, 9/21/2020:
+### Planning - Due Monday, 12/14/2020:
 
 Working in a team is going to require more upfront planning to ensure the team is "on the same page"...
 
@@ -58,7 +58,7 @@ Working in a team is going to require more upfront planning to ensure the team i
     
     ☐ An **ERD** showing the attributes of each entity and the relationships between them. Refer to the Data Modeling lesson for assistance.
 
-### Presentations - Friday, 9/25/2020:
+### Presentations - Friday, 12/21/2020:
 
 **Your entire team must participate in the presentation of the project.**
 
