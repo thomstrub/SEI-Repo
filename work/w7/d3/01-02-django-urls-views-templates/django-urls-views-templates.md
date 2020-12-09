@@ -21,7 +21,6 @@ All lessons this week are 100% Django!
 
 The lessons will add features, piece-by-piece, to a modern full-stack reference app named **CatCollector**.
 
-Let me show you the final version we're going to build this week.
 
 Then, after the lessons, you will use lab time to repeat what you saw in the lesson by building your own app named anything you want, say - **FinchCollector**.
 
