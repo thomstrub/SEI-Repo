@@ -25,7 +25,7 @@
 
 - Open a terminal in VS Code: `ctrl + backtick`
 
-- Make sure that the `master` branch is checked out
+- Make sure that the `main` branch is checked out
 
 ### Heroku Account & Toolbelt
 

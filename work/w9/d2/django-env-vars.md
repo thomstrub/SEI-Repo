@@ -32,5 +32,5 @@ If you need to use secret keys in your Django project for API access, etc., here
 Don’t forget after deploying, you’ll need to set the exact same config vars in Heroku using `config:set`, for example:
 
 ```bash
-$ config:set SECRET_KEY=abc123
+$ heroku config:set SECRET_KEY=abc123
 ```
