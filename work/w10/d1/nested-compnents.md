@@ -1,10 +1,3 @@
-<br>
-Title: Nested Components<br>
-Duration: 45min+ <br>
-Creator:  Joe Keohan<br>
-
----
-
 # Nested Components
 
 ## Learning Objectives
