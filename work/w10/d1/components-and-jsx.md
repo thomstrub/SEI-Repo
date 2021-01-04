@@ -1,11 +1,3 @@
-
-
-Title: Components And JSX<br>
-Duration: 45min+ <br>
-Creator:  Joe Keohan<br>
-
----
-
 # Components and JSX
 
 ## Learning Objectives
