@@ -189,32 +189,6 @@ Hooks were introduced in React Version 16.8. Before hooks, all state needed to b
 
 Hooks introduce state management to Functional components, using a simpler and more flexible API and let you split one component into smaller functions based on what pieces are related"
 
-**Class Compoonent State Example**
-
-Class components come with a lot of boilerplate, which can feel bulky, especially when dealing with a simpler state. 
-
-Here is how state would have been configured using a class Component. 
-
-```js
-class Counter extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = {count: 0}
-  }
-  render() {}
-}
-```
-
-Although with the the next ES class properties proposal and the help of` Babel` to transpile the code the above could be written as:
-
-```js
-class Counter extends React.Component {
-
-  state = {count: 0}
-
-  render() {}
-}
-```
 
 **State of Transition**
 
@@ -561,6 +535,34 @@ export default Counter
 
 
 <hr>
+
+**Class Compoonent State Example**
+
+Class components come with a lot of boilerplate, which can feel bulky, especially when dealing with a simpler state. 
+
+Here is how state would have been configured using a class Component. 
+
+```js
+class Counter extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {count: 0}
+  }
+  render() {}
+}
+```
+
+Although with the the next ES class properties proposal and the help of` Babel` to transpile the code the above could be written as:
+
+```js
+class Counter extends React.Component {
+
+  state = {count: 0}
+
+  render() {}
+}
+```
+
 
 #### :mag: Check for Understanding - 2min
 
