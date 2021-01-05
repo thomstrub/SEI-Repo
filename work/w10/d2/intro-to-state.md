@@ -1,10 +1,3 @@
-
-Title: Intro to State<br>
-Duration: 1.5hrs+ <br>
-Creator:  Joe Keohan<br>
-
----
-
 # Intro to State
 
 <img src="https://i.imgur.com/KRmlOo1.png" width=500/>
