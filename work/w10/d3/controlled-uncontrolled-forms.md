@@ -292,7 +292,7 @@ Let's examine the first input element and see if there is anything there that is
 
 ```js
 <input
-    onChange={() => handleChange(event)}
+    onChange={handleChange}
     value = {login.email}
     type="text"
     className="form-control"
