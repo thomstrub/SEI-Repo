@@ -1,10 +1,3 @@
-<br>
-Title: Controlled-Uncontrolled Forms<br>
-Duration: 1hr + <br>
-Creator:  Joe Keohan<br>
-
----
-
 # Controlled-Uncontrolled Inputs
 
 <img src="https://i.imgur.com/BIes4H2.png" width=600/>
