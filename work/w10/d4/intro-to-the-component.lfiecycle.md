@@ -1,10 +1,3 @@
-<br>
-Title: Component LifeCycles<br>
-Duration: 1hr + <br>
-Creator:  Joe Keohan<br>
-
----
-
 # The Component LifeCycles
 
 ## Prerequisites
