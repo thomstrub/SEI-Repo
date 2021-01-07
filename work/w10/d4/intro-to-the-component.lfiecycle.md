@@ -29,29 +29,6 @@ The Components themselves may need to keep track of if, and when, it's been adde
 
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 5min
-
-Let's take a look at the following versions of the Mars website that I built in React. 
-
-- [Mars - Media Queries](https://0wqnv.csb.app/)
-- [Mars - Inline Styles](https://wpixk.csb.app/)
-
-Let's do the following together:
-
-- Open both sites in separate tabs and with DevTools open as well. 
-- In DevTools use the `Toggle Device Toolbar` to view the site in Responsive mode
-- Enable `Tablet` view for both web sites 
-- Select and examine the following element:
-
-```html
-<div id='nav_container>...</div>
-```
-
-The Instructor will now direct your attention to those elements the difference between the two apps. 
-
-**Note:** The implementation of these two sites were created for the following medium article I wrote on [3-ways-to-implement-responsive-design-in-your-react-app](https://medium.com/@jkeohan/3-ways-to-implement-responsive-design-in-your-react-app-bcb6ee7eb424)
-
-<hr>
 
 ## The 3 Main Phases Of The Component Lifecycle
 
