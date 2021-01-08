@@ -1,10 +1,3 @@
-<br>
-Title: Controlled-Uncontrolled Forms<br>
-Duration: 1hr + <br>
-Creator:  Joe Keohan<br>
-
----
-
 # Controlled-Uncontrolled Inputs
 
 <img src="https://i.imgur.com/BIes4H2.png" width=600/>
@@ -299,7 +292,7 @@ Let's examine the first input element and see if there is anything there that is
 
 ```js
 <input
-    onChange={() => handleChange(event)}
+    onChange={handleChange}
     value = {login.email}
     type="text"
     className="form-control"

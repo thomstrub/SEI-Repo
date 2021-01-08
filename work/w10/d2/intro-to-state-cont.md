@@ -1,10 +1,3 @@
-<br>
-Title: Working With More Complex Versions Of State<br>
-Duration: 1hr + <br>
-Creator:  Joe Keohan<br>
-
----
-
 # Working With More Complex Versions Of State
 
 ## Learning Objectives

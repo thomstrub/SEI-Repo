@@ -1,10 +1,3 @@
-<br>
-Title: Lifting State<br>
-Duration: 1hr + <br>
-Creator:  Joe Keohan<br>
-
----
-
 # Lifting State
 
 ## Learning Objectives
