@@ -28,13 +28,7 @@ url. This way we don't have to reload the entire page to swap out some data.
 
 Here is what we are looking to build:  [Bitcoin Solution Code](https://9esbr.csb.app/)
 
-### Provider/Consumer Model
 
-During the introduction of `useContext` we first took a look at the `Provider/Consumer` model that was happening under the hood of a React app that was using React Router.  
-
-Let's take a minute once again to open the solution code and view that model again in React DevTools. 
-
-<img src="https://i.imgur.com/ZOhp1KO.png" width=400/>
 
 
 ## React Router Setup 
