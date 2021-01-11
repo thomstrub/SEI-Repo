@@ -111,14 +111,12 @@ An error component was set up for you to render errors.
                     />
                     <Form.TextArea label='bio' placeholder='Tell us more about your dogs...' onChange={handleChange}/>
                     <Form.Field> 
-                      <Ref innerRef={formRef}>
                         <Form.Input
                           type="file"
                           name="photo"
                           placeholder="upload image"
                           onChange={handleFileInput}
-                        />
-                      </Ref>
+                        />      
                     </Form.Field>
                     <Button
                       type="submit"
