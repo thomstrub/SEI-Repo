@@ -254,6 +254,20 @@ async function handleSubmit(e){
 
 The Javascript api for `FormData` allows us to create a form data, and thats what we are doing above! This is required whenever we are uploading forms!
 
+- So before we get to the server part, since we are sending over formData as our type, we have do a refactor on our signup fetch.
+
+```js
+function signup(user) {
+  return fetch(BASE_URL + 'signup', {
+    method: 'POST',
+    // headers: new Headers({'Content-Type': 'application/json'}),
+    body: JSON.stringify(user)
+  })
+
+```
+
+we have to remove the headers, because we aren't sending pure json, and now we are sending multi-part form data which the browser will automatically detect and set for us!
+
 **Server** 
 
 Lets make sure our user model has everything we want including the file and photourl.  
@@ -278,7 +292,7 @@ We should be able to log something like the following at this point!
 
 - inside our controller 
 
-```
+```js
 async function signup(req, res) {
   console.log('hitting signup router')
   console.log(req.body, req.file)
@@ -304,7 +318,7 @@ Lets check out the [multer](https://www.npmjs.com/package/multer)
 
 The part that is useful for us is this 
 
-```
+```js
 var multer  = require('multer')
 var upload = multer({ dest: 'uploads/' })
  
@@ -386,7 +400,7 @@ const s3 = new S3(); // initialize the S3 constructor
 ```
 
 -okay so now we have to refactor our signup function to upload the photo!
-```
+```js
 function signup(req, res) {
   console.log(req.body, req.file)
 
@@ -425,7 +439,7 @@ We'll store our user in the top most component in case any other component needs
 
 - App.js 
 
-```
+```js
 import userService from '../../utils/userService';
 
 function App() {
