@@ -36,4 +36,4 @@ import App from './pages/App/App';
 
 - Setup
 
-[Imgur](https://i.imgur.com/fUEUKWj.png)
+![Imgur](https://i.imgur.com/fUEUKWj.png)
