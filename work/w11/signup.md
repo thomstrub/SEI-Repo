@@ -209,3 +209,91 @@ from mdn
 
 > multipart/form-data: each value is sent as a block of data ("body part"), with a user agent-defined delimiter ("boundary") separating each part. The keys are given in the Content-Disposition header of each part.
 
+- So this well require us to set up our data as `formData` in order to properly make the request to our server!
+
+- So lets set up our handle submit function
+
+
+```js
+async function handleSubmit(e){
+      e.preventDefault()
+      
+      // Photos have to be sent over using FormData,
+      // they are sent over to the server in multiple requests
+      const formData = new FormData()
+      formData.append('photo', selectedFile)
+      
+      for (let fieldName in state){
+        console.log(fieldName, state[fieldName])
+        // append the rest of the data to the form obejct
+        formData.append(fieldName, state[fieldName])
+      }
+     
+      try {
+          console.log(formData.forEach((item) => console.log(item)))
+          
+          // use the userService to make the fetch request
+          await userService.signup(formData);
+
+          // Route to wherever you want!
+          // after you get a response from the server from 
+          // the signup request, you need to grab the token from 
+          // local storage and set the user!
+        
+        
+        } catch (err) {
+          // Invalid user data (probably duplicate email)
+          console.log(err.message)
+          setError(err.message)
+        }
+    }
+
+
+// on the form 
+
+ <Form autoComplete="off"  onSubmit={handleSubmit}>
+```
+
+The Javascript api for `FormData` allows us to create a form data, and thats what we are doing above! This is required whenever we are uploading forms!
+
+**Server** 
+
+Lets make sure our user model has everything we want including the file and photourl.  
+
+
+```js
+const userSchema = new mongoose.Schema({
+  username: String,
+  email: {type: String, required: true, lowercase: true, unique: true},
+  password: {type: String, required: true},
+  photoUrl: String,
+  bio: String
+}, {
+  timestamps: true
+});
+```
+
+Okay cool we set up our user model, lets go ahead and make a request to our server and log out our `req.body`
+
+We should be able to log something like the following at this point!
+
+
+- inside our controller 
+
+```
+async function signup(req, res) {
+  console.log('hitting signup router')
+  console.log(req.body, req.file)
+  // rest of code
+```
+- our terminal
+
+```js
+{
+  username: 'gary',
+  email: 'gary@gary.com',
+  password: 'gary',
+  passwordConf: 'gary',
+  bio: 'gary'
+} undefined
+```
