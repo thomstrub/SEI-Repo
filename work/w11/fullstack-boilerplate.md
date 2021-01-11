@@ -127,26 +127,26 @@ What is set up on the server to serve express?
 
  Mount and configure the `serve-favicon` & `static` middleware so that they serve from the **build** (production-ready) folder:
 
-	```js
-	app.use(express.json());
-	
-	// Configure both serve-favicon & static middlewares
-	// to serve from the production 'build' folder
-	app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
-	app.use(express.static(path.join(__dirname, 'build')));
-	```
+```js
+app.use(express.json());
+
+// Configure both serve-favicon & static middlewares
+// to serve from the production 'build' folder
+app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
+app.use(express.static(path.join(__dirname, 'build')));
+```
 
 A single "catch all" route is required for client-side routing to work properly:
 
-	```js
-	// Put API routes here, before the "catch all" route
-	
-	// The following "catch all" route (note the *)is necessary
-	// for a SPA's client-side routing to properly work
-	app.get('/*', function(req, res) {
-	  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-	});
-	```
+```js
+// Put API routes here, before the "catch all" route
+
+// The following "catch all" route (note the *)is necessary
+// for a SPA's client-side routing to properly work
+app.get('/*', function(req, res) {
+res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+```
 
 > Note: Since this route is a "catch all" that matches every `get` request, be sure to mount API or other routes before it!
 	
@@ -165,15 +165,15 @@ A single "catch all" route is required for client-side routing to work properly:
 
 Set the port for development to use 3001 so that React's dev server can continue to use 3000 and finally, tell the Express app to listen for incoming requests:
 
-	```js
-	// Configure to use port 3001 instead of 3000 during
-	// development to avoid collision with React's dev server
-	const port = process.env.PORT || 3001;
-	
-	app.listen(port, function() {
-	  console.log(`Express app running on port ${port}`)
-	});
-	```
+```js
+// Configure to use port 3001 instead of 3000 during
+// development to avoid collision with React's dev server
+const port = process.env.PORT || 3001;
+
+app.listen(port, function() {
+console.log(`Express app running on port ${port}`)
+});
+```
 
 #### Try It Out
 
