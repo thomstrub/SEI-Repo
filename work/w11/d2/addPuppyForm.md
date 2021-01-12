@@ -87,7 +87,7 @@ import React from 'react';
 import { Header, Segment} from 'semantic-ui-react';
 
 
-export default function PageHeader({user, handleLogout}){
+export default function PageHeader(){
     return (
         <Segment>
             <Header as='h2' >
@@ -106,7 +106,7 @@ import React, { useState } from 'react';
 export default function AddPostForm(){
     
     return (
-        <span> Post Form</Form>
+        <span> Post Form</span>
     )
 }
 
