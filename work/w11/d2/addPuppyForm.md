@@ -459,6 +459,6 @@ export default function Feed({ user,handleLogout}){
 
 **Resources**
 
-[multer](https://www.npmjs.com/package/multer)
-[aws/sdk](https://www.npmjs.com/package/aws-sdk)
-[semantic ui react](https://react.semantic-ui.com/)
+1. [multer](https://www.npmjs.com/package/multer)
+2. [aws/sdk](https://www.npmjs.com/package/aws-sdk)
+3. [semantic ui react](https://react.semantic-ui.com/)
