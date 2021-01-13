@@ -24,7 +24,9 @@
 4.  Cards to render out each Post!
 
 
-### Step One Set up your the basic components!
+### Step One
+
+**Set up your the basic components!**
 
 1. Create the Profile Page.
 
@@ -45,7 +47,7 @@ export default function ProfilePage({user}){
 - Here we need to Create a new Route for the profile page,
 - We'll use the username for the profile route to make navigation easy just like fb and instagram!
 
-- app.js
+*app.js*
 
 ```js
  <Switch>
@@ -67,9 +69,9 @@ export default function ProfilePage({user}){
 
 - We are using params here so the user can search any username!
 
-3. Lets Create are other components that we will need the Profile Bio and ProfilePostDisplay!
+3. Lets Create our other components that we will need, the Profile Bio and ProfilePostDisplay!
 
-- components/ProfilePostDisplay/ProfilePostDisplay
+*components/ProfilePostDisplay/ProfilePostDisplay*
 
 ```js
 import React from 'react';
@@ -87,9 +89,9 @@ export default function ProfilePostDisplay(props){
 }
 ```
 
-- Notice how this component is importing the Post component we'll be able to reuse, and the Card from semantic ui which will be helpful later on in styling. 
+- Notice how this component is importing the Post component we'll be able to reuse, and the Card from semantic ui which will be helpful later on in styling (in the lab). 
 
-- components/ProfileBio/ProfileBio
+*components/ProfileBio/ProfileBio*
 
 ```js
 import React from 'react';
@@ -109,7 +111,7 @@ export default ProfileBio;
 
 ### Setting up the Profile Page 
 
-- Lets import our components and render them out in different rows like wireframe
+- Lets import our components and render them out in different rows like the wireframe
 
 
 ```js
@@ -157,16 +159,16 @@ export default function ProfilePage(){
 
 - Lets take a look at the route we'll have to make a request to on the backend!
 
-routes/api/users.js
+*routes/api/users.js*
 
 ```js
 router.get('/:username', usersCtrl.profile);
 ```
 
-- We see have a route which full address is `/api/users/:username` set up that will trigger our `usersCtrl.profile` route. Lets go checkout that route as well!
+- We see we have a route which it's full address is `/api/users/:username` and when that endpoint is hit, it will trigger our `usersCtrl.profile` route. Lets go checkout that route as well!
 
 
-controllers/users.js
+*controllers/users.js*
 
 ```js
 async function profile(req, res){
@@ -214,7 +216,7 @@ export default {
 };
 ```
 
-- We see our function will take in a username (whatever the username in the url will be!), and we are sending over our jwt for authentication!
+- We see our function has a parameter called `username` (which whatever the username in the url will be!), and we are sending over our jwt for authentication!
 - now back to the profilePage
 
 **Making the api call when the page loads**
@@ -228,7 +230,7 @@ import { useLocation } from 'react-router-dom';
 
 - We will use the `useLocation` hook from react-router-dom in order to figure out what username is in the url!
 
-- ProfilePage Component
+*ProfilePage Component*
 
 ```js
 export default function ProfilePage(){
@@ -306,7 +308,7 @@ export default function ProfilePage(){
 
 - Lets update the profile bio to render out our information
 
-components/ProfileBio/ProfileBio
+*components/ProfileBio/ProfileBio*
 
 
 ```js
