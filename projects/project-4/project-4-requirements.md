@@ -146,21 +146,3 @@ Include the following sections within the **`README.md`**:
 
 - **Comment your code where it makes sense to do so**. Most code is self-documenting (don't comment the obvious), however, use comments to explain complicated code.
 
-## Project 4 Assessment
-
-There will be a Project 4 Assessment.
-
-Passing the project assessment is a requirement of the project itself.
-
-The goal of Project 4's assessment will be to gauge your ability to develop a minimal React application that:
-
-- Renders user-defined components
-- Updates state in response to some basic user interaction
-- Dynamically styles components based upon state
-
-The assessment will not require using a database or routing.
-
-You will work on the assessment individually, however, the assessment is "open book", so you will have access to all notes, code, lessons, google, etc.
-
-It is anticipated that it will take 45 - 90 minutes to complete.  However, if necessary, you have up to 3 hours.
-
