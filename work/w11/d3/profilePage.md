@@ -34,7 +34,7 @@ pages/ProfilePage/ProfilePage.jsx
 
 ```js
 import {  Grid } from 'semantic-ui-react'
-export default function ProfilePage({user}){
+export default function ProfilePage(){
 
   return (
     <div> This is Profile Page</div>
@@ -52,7 +52,7 @@ export default function ProfilePage({user}){
 ```js
  <Switch>
     <Route exact path="/">
-        <Feed user={user}/>
+        <Feed/>
     </Route>
     <Route exact path="/login">
        <LoginPage handleSignUpOrLogin={handleSignUpOrLogin}/>
