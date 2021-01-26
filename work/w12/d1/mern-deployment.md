@@ -73,9 +73,11 @@ Follow the instructions from our earlier [lesson](https://git.generalassemb.ly/S
 
 ##### Open the App
 
-`$ heroku open` and now everyone can play the 1973 Game of the Year!
+`$ heroku open`
 
-<img src="https://i.imgur.com/jyfJ4gy.png">
+###### Debug the App
+
+`$ heroku logs`
 
 ## Essential Questions
 
