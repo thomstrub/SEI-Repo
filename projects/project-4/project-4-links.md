@@ -11,7 +11,7 @@
 | Kory Breitenbucher |  | diverse match | [link](https://github.com/DangerousKoin/DiverseMatch) | [link](https://trello.com/b/8KFV9xnx/diverse-match) | [link](https://diverse-match.herokuapp.com/) |
 | Kyle Adrian Lainez  |  | convey messaging | [link](https://github.com/kylelainez/messaging-app) | [link](https://trello.com/b/ArbXY3QG/react-messaging-app) | [link](https://convey-messaging.herokuapp.com/) |
 | Vanessa Kosiyanon  |  | Bookish search | [link](https://github.com/vkosiyan/bookish) | [link](https://trello.com/b/ntcckX7F) | [link](https://bookish-search-app.herokuapp.com/) |
-| James Kim |  | | [link](https://github.com/jamesjkim88/GA-final-project) | [link](https://trello.com/b/D3krbEbF/final-project) | [link]() |
-| Alejandro |  | | [link](https://github.com/alexalferez/AnimeElite) | [link](https://trello.com/b/D3krbEbF/final-project) | [link]() |
-| Joey |  | | [link](https://github.com/joeyrebbe/jam-sesh) | [link](https://trello.com/b/D3krbEbF/final-project) | [link]() |
+| James Kim |  |Final Project | [link](https://github.com/jamesjkim88/GA-final-project) | [link](https://trello.com/b/D3krbEbF/final-project) | [link]() |
+| Alejandro |  |Anime Elite | [link](https://github.com/alexalferez/AnimeElite) | [link](https://trello.com/b/D3krbEbF/final-project) | [link]() |
+| Joey |  | Jam sesh | [link](https://github.com/joeyrebbe/jam-sesh) | [link](https://trello.com/b/D3krbEbF/final-project) | [link]() |
 | Mehrdad |  |FlowFive | [link](https://github.com/SamiaMehrdad/FlowFive) | [link](https://trello.com/b/AS48yyzq/ff-template) | [link]() |
